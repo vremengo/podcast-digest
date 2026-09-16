@@ -1,4 +1,11 @@
 {
  "channel_ids": {},
- "videos": {}
+ "videos": {
+  "IR_JOaYJnVE": {
+   "attempts": 1,
+   "note": "TelegramError: HTTP 400: Bad Request: chat not found",
+   "status": "failed",
+   "ts": "2026-09-16T20:48:14+00:00"
+  }
+ }
 }
