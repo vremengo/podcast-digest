@@ -1,0 +1,61 @@
+name: podcast-digest
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"   # кожні 2 години (UTC)
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Обробити конкретне відео (необов'язково)"
+        required: false
+      dry_run:
+        description: "Лише показати пост у логах, не публікувати"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: podcast-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run digest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_MODELS: ${{ vars.GEMINI_MODELS }}
+          INPUT_VIDEO: ${{ inputs.video_url }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=()
+          if [ -n "$INPUT_VIDEO" ]; then args+=(--video "$INPUT_VIDEO"); fi
+          if [ "$INPUT_DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          python -m digest "${args[@]}"
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "podcast-digest-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update digest state [skip ci]"
+            git pull --rebase --autostash && git push
+          fi
