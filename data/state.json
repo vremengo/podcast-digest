@@ -3,9 +3,9 @@
  "videos": {
   "IR_JOaYJnVE": {
    "attempts": 3,
-   "note": "TelegramError: HTTP 400: Bad Request: chat not found",
-   "status": "failed",
-   "ts": "2026-09-16T20:52:08+00:00"
+   "note": "gemini-3.8-flash; 2/2 msg",
+   "status": "posted",
+   "ts": "2026-09-16T21:03:09+00:00"
   }
  }
 }
