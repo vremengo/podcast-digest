@@ -16,8 +16,6 @@ max_videos_per_run: 2
 # Список YouTube-каналів. Можна вказати handle (@...) або id (UC...).
 # name — необов'язкова назва для посту (інакше береться назва каналу з YouTube).
 channels:
-  - handle: "@JayShetty"
-    name: "Jay Shetty · On Purpose"
   - handle: "@allin"
     name: "All-In Podcast"
   - handle: "@ycombinator"
