@@ -11,6 +11,18 @@
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
  "videos": {
+  "6AgOfiZOWiY": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-17T21:20:11+00:00"
+  },
+  "7a6BfbZiDV4": {
+   "attempts": 0,
+   "note": "коротке: 105s",
+   "status": "skipped",
+   "ts": "2026-09-17T21:19:34+00:00"
+  },
   "Fp4a4CaI-74": {
    "attempts": 0,
    "note": "коротке: 45s",
@@ -88,6 +100,12 @@
    "note": "коротке: 71s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "qp2IbgJ5Z-8": {
+   "attempts": 1,
+   "note": "TelegramError: HTTP 400: Bad Request: chat not found",
+   "status": "failed",
+   "ts": "2026-09-17T21:20:38+00:00"
   },
   "quE_4g7s34Q": {
    "attempts": 0,
