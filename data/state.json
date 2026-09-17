@@ -1,13 +1,99 @@
 {
  "channel_ids": {
-  "@jayshetty": "UCbV60AGIHKz2xIGvbk0LLvg"
+  "@a16z": "UC9cn0TuPq4dnbTY-CBsm8XA",
+  "@allin": "UCESLZhusAkFfsNsApnjF_Cg",
+  "@dwarkeshpatel": "UCXl4i9dYBrFOabk0xGmbkRA",
+  "@garyseconomics": "UC5Ghe5TBQGYIOANuiNW4hDQ",
+  "@jayshetty": "UCbV60AGIHKz2xIGvbk0LLvg",
+  "@koliada_bio": "UCJHw3Dd2Q98XHdGGEFPCMPA",
+  "@thediaryofaceo": "UCGq-a57w-aPwyi3pW7XLiHw",
+  "@theeconomist": "UC0p5jTq6Xx_DosDFxVXnWaQ",
+  "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
  "videos": {
+  "Fp4a4CaI-74": {
+   "attempts": 0,
+   "note": "коротке: 45s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "FxwiNX6l5qA": {
+   "attempts": 0,
+   "note": "коротке: 82s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
   "IR_JOaYJnVE": {
    "attempts": 3,
    "note": "gemini-3.8-flash; 2/2 msg",
    "status": "posted",
    "ts": "2026-09-16T21:03:09+00:00"
+  },
+  "K5yGLO8c6T0": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-17T19:14:40+00:00"
+  },
+  "OhOmLqR5nN4": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-17T19:15:00+00:00"
+  },
+  "PJrntzMA4iQ": {
+   "attempts": 0,
+   "note": "коротке: 1090s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "PUcooQRy0PU": {
+   "attempts": 0,
+   "note": "коротке: 1652s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "QGKlOf_kThY": {
+   "attempts": 0,
+   "note": "коротке: 85s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "XgqKqN_H-4M": {
+   "attempts": 0,
+   "note": "коротке: 31s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "eo0Q7yTz4pc": {
+   "attempts": 0,
+   "note": "коротке: 124s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "jSM10gpdWLs": {
+   "attempts": 0,
+   "note": "коротке: 1163s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "lgQeAyi0cBE": {
+   "attempts": 0,
+   "note": "коротке: 97s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "nOaaqYhBwcA": {
+   "attempts": 0,
+   "note": "коротке: 71s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "quE_4g7s34Q": {
+   "attempts": 0,
+   "note": "коротке: 43s",
+   "status": "skipped",
+   "ts": "2026-09-17T19:14:24+00:00"
   }
  }
 }
