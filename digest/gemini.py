@@ -24,11 +24,6 @@ class Person(BaseModel):
     is_host: bool
 
 
-class Thesis(BaseModel):
-    title: str
-    text: str
-
-
 class Quote(BaseModel):
     text: str
     author_uk: str
@@ -36,12 +31,15 @@ class Quote(BaseModel):
 
 class Digest(BaseModel):
     is_substantive: bool
+    category: str = ""
     headline: str
     people: list[Person] = Field(default_factory=list)
-    summary: str
-    theses: list[Thesis] = Field(default_factory=list)
+    lead: str
+    numbers: list[str] = Field(default_factory=list)
+    disagreement: str = ""
     quotes: list[Quote] = Field(default_factory=list)
-    takeaway: str
+    implication: str
+    watch_next: str = ""
 
 
 class QuotaExhausted(Exception):
@@ -75,10 +73,12 @@ def validate(d: Digest) -> list[str]:
     problems = []
     if not d.headline.strip():
         problems.append("порожній заголовок")
-    if not d.summary.strip():
-        problems.append("порожній опис")
-    if d.is_substantive and not (3 <= len(d.theses) <= 10):
-        problems.append(f"тез: {len(d.theses)}")
+    if not d.lead.strip():
+        problems.append("порожній лід")
+    if d.is_substantive and not (3 <= len(d.numbers) <= 6):
+        problems.append(f"пунктів у «Числах»: {len(d.numbers)}")
+    if d.is_substantive and not d.implication.strip():
+        problems.append("порожній блок «Що з цього випливає»")
     if d.is_substantive and not d.people:
         problems.append("немає людей")
     return problems

@@ -16,19 +16,22 @@ NOW = datetime(2026, 9, 16, 6, 0, tzinfo=timezone.utc)
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def sample_digest(n_theses: int = 6, long: bool = False) -> gemini.Digest:
-    body = "Конкретний факт і приклад з розмови. " * (40 if long else 3)
+def sample_digest(n_numbers: int = 4, long: bool = False) -> gemini.Digest:
+    body = "Конкретний факт із цифрою 42 і прикладом з розмови. " * (40 if long else 3)
     return gemini.Digest(
         is_substantive=True,
+        category="Психологія",
         headline="Хлої Кардаш'ян про подолання сорому, терапію та внутрішню силу після 40 років",
         people=[
             gemini.Person(name_uk="Джей Шетті", name_en="Jay Shetty", role_uk="автор бестселерів, ведучий подкасту On Purpose", is_host=True),
             gemini.Person(name_uk="Хлої Кардаш'ян", name_en="Khloé Kardashian", role_uk="підприємниця, телеведуча, співзасновниця Good American", is_host=False),
         ],
-        summary="Розмова про переосмислення життєвих криз & відмову від <нав'язаного> сорому.",
-        theses=[gemini.Thesis(title=f"Теза {i}", text=body) for i in range(1, n_theses + 1)],
+        lead="Розмова про переосмислення життєвих криз & відмову від <нав'язаного> сорому.",
+        numbers=[f"Пункт {i}: {body}" for i in range(1, n_numbers + 1)],
+        disagreement="Гостя не погоджується з ведучим щодо публічності: він радить відкритість, вона наполягає на межах.",
         quotes=[gemini.Quote(text="«Сором — це не моя ноша»", author_uk="Хлої Кардаш'ян")],
-        takeaway="Кордони — це турбота про себе.",
+        implication="Кордони — це турбота про себе, а не егоїзм.",
+        watch_next="Чи вплине це на наступний сезон її шоу.",
     )
 
 
@@ -75,37 +78,44 @@ def test_render_matches_template():
     assert len(msgs) == 1
     m = msgs[0]
     print(m)
-    assert m.startswith('🧭 <a href="https://www.youtube.com/watch?v=abcdefghijk">Хлої Кардаш')
+    assert m.startswith('🎙 <a href="https://www.youtube.com/watch?v=abcdefghijk">Хлої Кардаш')
+    assert "📌 Психологія" in m
     # гість перед ведучим, з віком
     assert m.index("👤 Хлої Кардаш'ян – підприємниця") < m.index("🎤 Джей Шетті")
     assert "Good American (40)" in m and "On Purpose (36)" in m
-    assert "– 👥 6,01 млн підписників" in m
-    assert "⏱ 1 год 10 хв" in m
+    assert "· 👥 6,01 млн підписників" in m
+    assert "· ⏱ 1 год 10 хв" in m
     assert "🗓 15.09.26 (15 год тому)" in m  # 15:00 за Києвом 15.09
-    assert "👁 34 тис." in m
+    assert "· 👁 34 тис." in m
     assert "&amp; відмову від &lt;нав'язаного&gt;" in m  # HTML екранується
-    assert "💡 <b>ГОЛОВНІ ТЕЗИ</b>" in m and "1️⃣ <b>Теза 1</b>" in m and "6️⃣" in m
+    assert "📊 <b>ЧИСЛА ТА ФАКТИ</b>" in m and "• Пункт 1:" in m and "• Пункт 4:" in m
+    assert "⚔️ <b>ДЕ РОЗХОДЯТЬСЯ ДУМКИ</b>" in m
     assert "«Сором — це не моя ноша»" in m  # без подвійних лапок
-    assert "🎯 <b>ВИСНОВОК</b>" in m
+    assert "🎯 <b>ЩО З ЦЬОГО ВИПЛИВАЄ</b>" in m
+    assert "👀 <b>ЗА ЧИМ СТЕЖИТИ</b>" in m
 
 
 def test_render_without_optional_fields():
     d = sample_digest()
     d.quotes = []
+    d.disagreement = ""
+    d.watch_next = ""
+    d.category = ""
     m = render.render(d, sample_meta(subscribers=None, views=None, ages={}), "Europe/Kyiv", NOW)[0]
     assert "👥" not in m and "👁" not in m and "(40)" not in m and "💬" not in m
+    assert "⚔️" not in m and "👀" not in m and "📌" not in m
 
 
 def test_long_post_is_split_on_block_boundaries():
-    msgs = render.render(sample_digest(n_theses=7, long=True), sample_meta(), "Europe/Kyiv", NOW)
+    msgs = render.render(sample_digest(n_numbers=5, long=True), sample_meta(), "Europe/Kyiv", NOW)
     assert len(msgs) >= 2
     for m in msgs:
         assert render.visible_len(m) <= render.TG_LIMIT
         assert m.count("<b>") == m.count("</b>")
         assert m.count("<a ") == m.count("</a>")
     joined = "\n\n".join(msgs)
-    for i in range(1, 8):
-        assert f"<b>Теза {i}</b>" in joined
+    for i in range(1, 6):
+        assert f"• Пункт {i}:" in joined
 
 
 def test_visible_len_counts_utf16():
@@ -209,10 +219,10 @@ def test_gemini_quota_exhausted_everywhere():
 
 
 def test_gemini_retries_invalid_output():
-    bad = sample_digest(n_theses=1)
+    bad = sample_digest(n_numbers=1)
     client = _client([bad, sample_digest()])
     d, _ = gemini.summarize("k", ["m1"], "p", "u", "transcript", client=client)
-    assert len(d.theses) == 6
+    assert len(d.numbers) == 4
     assert client.models.calls[0][1][1].text.startswith("Транскрипт")
 
 

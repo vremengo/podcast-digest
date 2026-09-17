@@ -11,9 +11,8 @@ from .gemini import Digest
 
 TG_LIMIT = 4096
 SAFE_LIMIT = 4000
-SEPARATOR = "_" * 24
 QUOTE_CHARS = "«»\"„“” "
-NUM_EMOJI = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"]
+BULLET = "•"
 
 
 @dataclass
@@ -102,29 +101,46 @@ def render_blocks(d: Digest, meta: PostMeta, tz: str, now: datetime) -> list[str
     hosts = [p for p in d.people if p.is_host]
     local = meta.published.astimezone(ZoneInfo(tz))
 
-    blocks = [f'🧭 <a href="{html.escape(meta.video_url)}">{esc(d.headline)}</a>']
+    blocks = [f'🎙 <a href="{html.escape(meta.video_url)}">{esc(d.headline)}</a>']
+
+    head = []
+    if d.category.strip():
+        head.append(f"📌 {esc(d.category)}")
+    info = f'📺 <a href="{html.escape(meta.channel_url)}">{esc(meta.channel_title)}</a>'
+    if meta.subscribers:
+        info += f" · 👥 {subscribers_label(meta.subscribers)}"
+    info += f" · ⏱ {human_duration(meta.duration_s)}"
+    if meta.views is not None:
+        info += f" · 👁 {human_number(meta.views)}"
+    head.append(info)
+    head.append(f"🗓 {local:%d.%m.%y} ({human_ago(meta.published, now)})")
+    blocks.append("\n".join(head))
+
     if d.people:
         blocks.append("\n".join(person_line(p, meta.ages) for p in guests + hosts))
 
-    info = f'📺 <a href="{html.escape(meta.channel_url)}">{esc(meta.channel_title)}</a>'
-    if meta.subscribers:
-        info += f" – 👥 {subscribers_label(meta.subscribers)}"
-    info_lines = [info, f"⏱ {human_duration(meta.duration_s)}", f"🗓 {local:%d.%m.%y} ({human_ago(meta.published, now)})"]
-    if meta.views is not None:
-        info_lines.append(f"👁 {human_number(meta.views)}")
-    blocks.append("\n".join(info_lines))
+    blocks.append(esc(d.lead))
 
-    blocks.append(f"📝 {esc(d.summary)}")
-    blocks.append(SEPARATOR)
-    blocks.append("💡 <b>ГОЛОВНІ ТЕЗИ</b>")
-    for i, t in enumerate(d.theses[: len(NUM_EMOJI)]):
-        blocks.append(f"{NUM_EMOJI[i]} <b>{esc(t.title)}</b>\n{esc(t.text)}")
-
-    if d.quotes:
-        quotes = "\n\n".join(f"«{esc(q.text).strip(QUOTE_CHARS)}»\n— <i>{esc(q.author_uk)}</i>" for q in d.quotes)
-        blocks.append(f"💬 <b>ЦИТАТИ</b>\n\n{quotes}")
-    if d.takeaway.strip():
-        blocks.append(f"🎯 <b>ВИСНОВОК</b>\n{esc(d.takeaway)}")
+    if d.numbers:
+        # тримаємо пункти разом, але якщо блок не влазить у повідомлення — рвемо між пунктами
+        current = "📊 <b>ЧИСЛА ТА ФАКТИ</b>"
+        for n in d.numbers:
+            line = f"{BULLET} {esc(n)}"
+            candidate = f"{current}\n{line}"
+            if visible_len(candidate) <= SAFE_LIMIT:
+                current = candidate
+            else:
+                blocks.append(current)
+                current = line
+        blocks.append(current)
+    if d.disagreement.strip():
+        blocks.append(f"⚔️ <b>ДЕ РОЗХОДЯТЬСЯ ДУМКИ</b>\n{esc(d.disagreement)}")
+    for q in d.quotes:
+        blocks.append(f"💬 «{esc(q.text).strip(QUOTE_CHARS)}»\n— <i>{esc(q.author_uk)}</i>")
+    if d.implication.strip():
+        blocks.append(f"🎯 <b>ЩО З ЦЬОГО ВИПЛИВАЄ</b>\n{esc(d.implication)}")
+    if d.watch_next.strip():
+        blocks.append(f"👀 <b>ЗА ЧИМ СТЕЖИТИ</b>\n{esc(d.watch_next)}")
     return blocks
 
 
