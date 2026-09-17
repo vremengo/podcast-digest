@@ -13,6 +13,9 @@ TG_LIMIT = 4096
 SAFE_LIMIT = 4000
 QUOTE_CHARS = "«»\"„“” "
 BULLET = "•"
+TS_LEAD_IN = 5  # ставимо посилання трохи раніше: таймкод від моделі буває неточним
+_TS = re.compile(r"^(?:(\d{1,2}):)?(\d{1,3}):(\d{2})$")
+_OPINION = ("оцін", "думк", "прогноз", "opinion", "estimate")
 
 
 @dataclass
@@ -87,6 +90,38 @@ def human_ago(published: datetime, now: datetime) -> str:
     return f"{days} {plural_uk(days, 'день', 'дні', 'днів')} тому"
 
 
+def parse_ts(value: str) -> int | None:
+    """«12:34» або «1:02:03» -> секунди. Повертає None, якщо формат не той."""
+    m = _TS.match((value or "").strip())
+    if not m:
+        return None
+    h, mm, ss = m.groups()
+    if int(ss) > 59:
+        return None
+    return int(h or 0) * 3600 + int(mm) * 60 + int(ss)
+
+
+def fmt_ts(seconds: int) -> str:
+    h, rest = divmod(seconds, 3600)
+    m, s = divmod(rest, 60)
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
+
+
+def ts_link(value: str, video_url: str, duration_s: int) -> str:
+    """Посилання на момент у відео. Порожньо, якщо таймкода немає або він поза тривалістю."""
+    sec = parse_ts(value)
+    if sec is None or sec > duration_s:
+        return ""
+    start = max(0, sec - TS_LEAD_IN)
+    sep = "&" if "?" in video_url else "?"
+    return f' <a href="{html.escape(video_url + sep)}t={start}s">⏱ {fmt_ts(sec)}</a>'
+
+
+def is_opinion(kind: str) -> bool:
+    k = (kind or "").strip().lower()
+    return any(k.startswith(p) for p in _OPINION)
+
+
 def person_line(p, ages: dict[str, int]) -> str:
     icon = "🎤" if p.is_host else "👤"
     line = f"{icon} {esc(p.name_uk)} – {esc(p.role_uk)}"
@@ -121,11 +156,15 @@ def render_blocks(d: Digest, meta: PostMeta, tz: str, now: datetime) -> list[str
 
     blocks.append(esc(d.lead))
 
-    if d.numbers:
+    facts = [f for f in d.facts if not is_opinion(f.kind)]
+    opinions = [f for f in d.facts if is_opinion(f.kind)]
+    for header, items in (("📊 <b>ЧИСЛА ТА ФАКТИ</b>", facts), ("🗣 <b>ОЦІНКИ ТА ПРОГНОЗИ</b>", opinions)):
+        if not items:
+            continue
         # тримаємо пункти разом, але якщо блок не влазить у повідомлення — рвемо між пунктами
-        current = "📊 <b>ЧИСЛА ТА ФАКТИ</b>"
-        for n in d.numbers:
-            line = f"{BULLET} {esc(n)}"
+        current = header
+        for f in items:
+            line = f"{BULLET} {esc(f.text)}{ts_link(f.ts, meta.video_url, meta.duration_s)}"
             candidate = f"{current}\n{line}"
             if visible_len(candidate) <= SAFE_LIMIT:
                 current = candidate
@@ -133,10 +172,13 @@ def render_blocks(d: Digest, meta: PostMeta, tz: str, now: datetime) -> list[str
                 blocks.append(current)
                 current = line
         blocks.append(current)
+
     if d.disagreement.strip():
         blocks.append(f"⚔️ <b>ДЕ РОЗХОДЯТЬСЯ ДУМКИ</b>\n{esc(d.disagreement)}")
     for q in d.quotes:
-        blocks.append(f"💬 «{esc(q.text).strip(QUOTE_CHARS)}»\n— <i>{esc(q.author_uk)}</i>")
+        link = ts_link(q.ts, meta.video_url, meta.duration_s)
+        author = f"— <i>{esc(q.author_uk)}</i>" + (f" ·{link}" if link else "")
+        blocks.append(f"💬 «{esc(q.text).strip(QUOTE_CHARS)}»\n{author}")
     if d.implication.strip():
         blocks.append(f"🎯 <b>ЩО З ЦЬОГО ВИПЛИВАЄ</b>\n{esc(d.implication)}")
     if d.watch_next.strip():

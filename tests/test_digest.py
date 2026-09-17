@@ -16,7 +16,7 @@ NOW = datetime(2026, 9, 16, 6, 0, tzinfo=timezone.utc)
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def sample_digest(n_numbers: int = 4, long: bool = False) -> gemini.Digest:
+def sample_digest(n_facts: int = 4, long: bool = False) -> gemini.Digest:
     body = "Конкретний факт із цифрою 42 і прикладом з розмови. " * (40 if long else 3)
     return gemini.Digest(
         is_substantive=True,
@@ -27,9 +27,12 @@ def sample_digest(n_numbers: int = 4, long: bool = False) -> gemini.Digest:
             gemini.Person(name_uk="Хлої Кардаш'ян", name_en="Khloé Kardashian", role_uk="підприємниця, телеведуча, співзасновниця Good American", is_host=False),
         ],
         lead="Розмова про переосмислення життєвих криз & відмову від <нав'язаного> сорому.",
-        numbers=[f"Пункт {i}: {body}" for i in range(1, n_numbers + 1)],
+        facts=[
+            gemini.Fact(text=f"Пункт {i}: {body}", kind="оцінка" if i == 2 else "факт", ts="5:07" if i == 1 else "")
+            for i in range(1, n_facts + 1)
+        ],
         disagreement="Гостя не погоджується з ведучим щодо публічності: він радить відкритість, вона наполягає на межах.",
-        quotes=[gemini.Quote(text="«Сором — це не моя ноша»", author_uk="Хлої Кардаш'ян")],
+        quotes=[gemini.Quote(text="«Сором — це не моя ноша»", author_uk="Хлої Кардаш'ян", ts="1:02:03")],
         implication="Кордони — це турбота про себе, а не егоїзм.",
         watch_next="Чи вплине це на наступний сезон її шоу.",
     )
@@ -89,6 +92,12 @@ def test_render_matches_template():
     assert "· 👁 34 тис." in m
     assert "&amp; відмову від &lt;нав'язаного&gt;" in m  # HTML екранується
     assert "📊 <b>ЧИСЛА ТА ФАКТИ</b>" in m and "• Пункт 1:" in m and "• Пункт 4:" in m
+    # оцінка спікера — в окремому блоці, не серед фактів
+    assert "🗣 <b>ОЦІНКИ ТА ПРОГНОЗИ</b>" in m
+    assert m.index("• Пункт 4:") < m.index("🗣") < m.index("• Пункт 2:")
+    # таймкод: посилання на 5 секунд раніше, підпис — точний момент
+    assert '<a href="https://www.youtube.com/watch?v=abcdefghijk&amp;t=302s">⏱ 5:07</a>' in m
+    assert '<a href="https://www.youtube.com/watch?v=abcdefghijk&amp;t=3718s">⏱ 1:02:03</a>' in m
     assert "⚔️ <b>ДЕ РОЗХОДЯТЬСЯ ДУМКИ</b>" in m
     assert "«Сором — це не моя ноша»" in m  # без подвійних лапок
     assert "🎯 <b>ЩО З ЦЬОГО ВИПЛИВАЄ</b>" in m
@@ -107,7 +116,7 @@ def test_render_without_optional_fields():
 
 
 def test_long_post_is_split_on_block_boundaries():
-    msgs = render.render(sample_digest(n_numbers=5, long=True), sample_meta(), "Europe/Kyiv", NOW)
+    msgs = render.render(sample_digest(n_facts=5, long=True), sample_meta(), "Europe/Kyiv", NOW)
     assert len(msgs) >= 2
     for m in msgs:
         assert render.visible_len(m) <= render.TG_LIMIT
@@ -116,6 +125,24 @@ def test_long_post_is_split_on_block_boundaries():
     joined = "\n\n".join(msgs)
     for i in range(1, 6):
         assert f"• Пункт {i}:" in joined
+
+
+def test_timestamps():
+    assert render.parse_ts("5:07") == 307
+    assert render.parse_ts("1:02:03") == 3723
+    assert render.parse_ts("90:00") == 5400  # модель може дати хвилини понад 60
+    assert render.parse_ts("5:70") is None and render.parse_ts("десь на початку") is None
+    assert render.parse_ts("") is None
+    url = "https://www.youtube.com/watch?v=abcdefghijk"
+    assert render.ts_link("2:00", url, duration_s=4212) == f' <a href="{url}&amp;t=115s">⏱ 2:00</a>'
+    assert render.ts_link("0:02", url, duration_s=4212).endswith('t=0s">⏱ 0:02</a>')  # не йдемо в мінус
+    assert render.ts_link("3:00:00", url, duration_s=4212) == ""  # поза тривалістю — без посилання
+    assert render.ts_link("", url, duration_s=4212) == ""
+
+
+def test_opinion_detection():
+    assert render.is_opinion("оцінка") and render.is_opinion("Оцінка") and render.is_opinion("прогноз")
+    assert not render.is_opinion("факт") and not render.is_opinion("")
 
 
 def test_visible_len_counts_utf16():
@@ -219,10 +246,10 @@ def test_gemini_quota_exhausted_everywhere():
 
 
 def test_gemini_retries_invalid_output():
-    bad = sample_digest(n_numbers=1)
+    bad = sample_digest(n_facts=1)
     client = _client([bad, sample_digest()])
     d, _ = gemini.summarize("k", ["m1"], "p", "u", "transcript", client=client)
-    assert len(d.numbers) == 4
+    assert len(d.facts) == 4
     assert client.models.calls[0][1][1].text.startswith("Транскрипт")
 
 

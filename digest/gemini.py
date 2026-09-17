@@ -27,6 +27,13 @@ class Person(BaseModel):
 class Quote(BaseModel):
     text: str
     author_uk: str
+    ts: str = ""  # момент у відео: «ХХ:СС» або «ГГ:ХХ:СС», порожньо — якщо не певен
+
+
+class Fact(BaseModel):
+    text: str
+    kind: str = "факт"  # «факт» — перевірюване твердження, «оцінка» — думка чи прогноз спікера
+    ts: str = ""
 
 
 class Digest(BaseModel):
@@ -35,7 +42,7 @@ class Digest(BaseModel):
     headline: str
     people: list[Person] = Field(default_factory=list)
     lead: str
-    numbers: list[str] = Field(default_factory=list)
+    facts: list[Fact] = Field(default_factory=list)
     disagreement: str = ""
     quotes: list[Quote] = Field(default_factory=list)
     implication: str
@@ -75,8 +82,8 @@ def validate(d: Digest) -> list[str]:
         problems.append("порожній заголовок")
     if not d.lead.strip():
         problems.append("порожній лід")
-    if d.is_substantive and not (3 <= len(d.numbers) <= 6):
-        problems.append(f"пунктів у «Числах»: {len(d.numbers)}")
+    if d.is_substantive and not (3 <= len(d.facts) <= 7):
+        problems.append(f"пунктів у «Фактах»: {len(d.facts)}")
     if d.is_substantive and not d.implication.strip():
         problems.append("порожній блок «Що з цього випливає»")
     if d.is_substantive and not d.people:
