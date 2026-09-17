@@ -26,3 +26,6 @@ channels:
   - handle: "@a16z"
   - handle: "@TheDiaryOfACEO"
     name: "The Diary Of A CEO"
+  - handle: "@garyseconomics"
+  - handle: "@TheEconomist"
+    name: "The Economist"
