@@ -11,6 +11,12 @@
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
  "videos": {
+  "-OIQs3xe9-I": {
+   "attempts": 0,
+   "note": "коротке: 39s",
+   "status": "skipped",
+   "ts": "2026-09-18T16:21:58+00:00"
+  },
   "68eKbz5-D5w": {
    "attempts": 0,
    "note": "коротке: 84s",
@@ -40,6 +46,12 @@
    "note": "коротке: 82s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "HUo9lj1NUQ4": {
+   "attempts": 0,
+   "note": "коротке: 407s",
+   "status": "skipped",
+   "ts": "2026-09-18T16:21:58+00:00"
   },
   "IR_JOaYJnVE": {
    "attempts": 3,
@@ -107,11 +119,17 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "qACa-auyy2c": {
+   "attempts": 0,
+   "note": "коротке: 179s",
+   "status": "skipped",
+   "ts": "2026-09-18T16:21:58+00:00"
+  },
   "qp2IbgJ5Z-8": {
-   "attempts": 2,
+   "attempts": 3,
    "note": "TelegramError: HTTP 400: Bad Request: chat not found",
    "status": "failed",
-   "ts": "2026-09-18T11:11:04+00:00"
+   "ts": "2026-09-18T16:26:59+00:00"
   },
   "quE_4g7s34Q": {
    "attempts": 0,
