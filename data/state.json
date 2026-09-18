@@ -17,6 +17,18 @@
    "status": "skipped",
    "ts": "2026-09-18T16:21:58+00:00"
   },
+  "-svLMqHJGaU": {
+   "attempts": 0,
+   "note": "коротке: 84s",
+   "status": "skipped",
+   "ts": "2026-09-18T20:52:37+00:00"
+  },
+  "10LyXQZ2nk4": {
+   "attempts": 0,
+   "note": "коротке: 92s",
+   "status": "skipped",
+   "ts": "2026-09-18T20:52:37+00:00"
+  },
   "68eKbz5-D5w": {
    "attempts": 0,
    "note": "коротке: 84s",
@@ -65,6 +77,12 @@
    "status": "posted",
    "ts": "2026-09-17T19:14:40+00:00"
   },
+  "Nvc6HWfoSoE": {
+   "attempts": 0,
+   "note": "коротке: 392s",
+   "status": "skipped",
+   "ts": "2026-09-18T20:52:37+00:00"
+  },
   "OhOmLqR5nN4": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -89,6 +107,12 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "SDbRJXQrYGY": {
+   "attempts": 1,
+   "note": "TelegramError: HTTP 400: Bad Request: chat not found",
+   "status": "failed",
+   "ts": "2026-09-18T20:52:54+00:00"
+  },
   "XgqKqN_H-4M": {
    "attempts": 0,
    "note": "коротке: 31s",
@@ -100,6 +124,12 @@
    "note": "коротке: 124s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "fSVn-0Hgt64": {
+   "attempts": 0,
+   "note": "коротке: 158s",
+   "status": "skipped",
+   "ts": "2026-09-18T20:52:37+00:00"
   },
   "jSM10gpdWLs": {
    "attempts": 0,
@@ -136,6 +166,12 @@
    "note": "коротке: 43s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "yslXlV2BP_Y": {
+   "attempts": 1,
+   "note": "TelegramError: HTTP 400: Bad Request: chat not found",
+   "status": "failed",
+   "ts": "2026-09-18T20:53:43+00:00"
   }
  }
 }
