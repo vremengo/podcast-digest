@@ -71,12 +71,6 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
-  "SDbRJXQrYGY": {
-   "attempts": 1,
-   "note": "TelegramError: HTTP 400: Bad Request: chat not found",
-   "status": "failed",
-   "ts": "2026-09-18T00:15:38+00:00"
-  },
   "XgqKqN_H-4M": {
    "attempts": 0,
    "note": "коротке: 31s",
@@ -106,12 +100,6 @@
    "note": "коротке: 71s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
-  },
-  "qp2IbgJ5Z-8": {
-   "attempts": 3,
-   "note": "DigestError: Не вдалося отримати дайджест: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use mod",
-   "status": "failed",
-   "ts": "2026-09-18T08:28:37+00:00"
   },
   "quE_4g7s34Q": {
    "attempts": 0,
