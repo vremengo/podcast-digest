@@ -12,6 +12,10 @@ on:
         description: "Лише показати пост у логах, не публікувати"
         type: boolean
         default: false
+      resolve_chat:
+        description: "Діагностика: лише перевірити getChat для TELEGRAM_CHAT_ID і вийти"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +38,23 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Diagnostics — getChat (не друкує токен)
+        if: ${{ inputs.resolve_chat == true }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          for i in 1 2 3 4 5; do
+            code=$(curl -s -o /tmp/getchat.json -w "%{http_code}" \
+              "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getChat?chat_id=${TELEGRAM_CHAT_ID}")
+            echo "спроба $i: HTTP $code"
+            python3 -c "import json; d=json.load(open('/tmp/getchat.json')); r=d.get('result',{}); print('  ok:', r.get('id'), r.get('type'), r.get('title')) if d.get('ok') else print('  FAIL:', d.get('description'))"
+            sleep 2
+          done
+          exit 0
+
       - name: Run digest
+        if: ${{ inputs.resolve_chat != true }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
