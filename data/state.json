@@ -155,12 +155,6 @@
    "status": "skipped",
    "ts": "2026-09-18T16:21:58+00:00"
   },
-  "qp2IbgJ5Z-8": {
-   "attempts": 3,
-   "note": "TelegramError: HTTP 400: Bad Request: chat not found",
-   "status": "failed",
-   "ts": "2026-09-18T16:26:59+00:00"
-  },
   "quE_4g7s34Q": {
    "attempts": 0,
    "note": "коротке: 43s",
