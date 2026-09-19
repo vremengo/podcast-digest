@@ -10,7 +10,7 @@
   "@theeconomist": "UC0p5jTq6Xx_DosDFxVXnWaQ",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 3,
+ "gemini_calls_today": 11,
  "gemini_day": "2026-09-19",
  "videos": {
   "-OIQs3xe9-I": {
@@ -49,6 +49,12 @@
    "status": "skipped",
    "ts": "2026-09-17T21:19:34+00:00"
   },
+  "A4Q7zAayW20": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-19T17:24:01+00:00"
+  },
   "Fp4a4CaI-74": {
    "attempts": 0,
    "note": "коротке: 45s",
@@ -60,6 +66,12 @@
    "note": "коротке: 82s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "GzEtpAKYRvE": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-19T17:19:26+00:00"
   },
   "HUo9lj1NUQ4": {
    "attempts": 0,
@@ -120,6 +132,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-19T12:29:35+00:00"
+  },
+  "VTF6p0U98ek": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-19T17:18:43+00:00"
   },
   "XgqKqN_H-4M": {
    "attempts": 0,
