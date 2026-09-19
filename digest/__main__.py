@@ -80,6 +80,8 @@ def process(cfg: Config, state: State, video: youtube.Video, display_name: str |
     )
     digest, model = gemini.summarize(cfg.gemini_api_key, cfg.gemini_models, prompt, video.url, text)
     log.info("Модель: %s", model)
+    if not dry_run and state.quota_cooldown_until:
+        state.clear_quota_cooldown()
 
     if not digest.is_substantive:
         log.info("Пропускаю: не змістовний випуск")
@@ -140,6 +142,12 @@ def main(argv: list[str] | None = None) -> int:
     state = State(cfg.state_path)
     now = datetime.now(timezone.utc)
 
+    if not args.video:
+        remaining = state.cooldown_remaining(now)
+        if remaining is not None:
+            log.info("Кулдаун після вичерпання квоти Gemini: ще %d хв — пропускаю цей запуск", remaining.total_seconds() // 60)
+            return 0
+
     if args.video:
         vid = extract_video_id(args.video)
         details = youtube.fetch_videos([vid], cfg.youtube_api_key)
@@ -159,7 +167,12 @@ def main(argv: list[str] | None = None) -> int:
         try:
             process(cfg, state, video, name, now, args.dry_run)
         except gemini.QuotaExhausted:
-            log.warning("Безкоштовний ліміт Gemini вичерпано — решту оброблю в наступному запуску")
+            log.warning(
+                "Безкоштовний ліміт Gemini вичерпано — пауза на %.0f год, щоб не бити в той самий ліміт щораз",
+                cfg.quota_cooldown_hours,
+            )
+            if not args.dry_run:
+                state.start_quota_cooldown(now, cfg.quota_cooldown_hours)
             break
         except Exception as e:
             failures += 1

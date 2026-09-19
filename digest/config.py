@@ -29,6 +29,7 @@ class Config:
     min_duration_minutes: int = 30
     lookback_hours: int = 48
     max_videos_per_run: int = 2
+    quota_cooldown_hours: float = 6
     gemini_models: list[str] = field(default_factory=list)
     gemini_api_key: str = ""
     youtube_api_key: str = ""
@@ -57,6 +58,7 @@ def load_config(path: Path | None = None) -> Config:
         min_duration_minutes=int(raw.get("min_duration_minutes", 30)),
         lookback_hours=int(raw.get("lookback_hours", 48)),
         max_videos_per_run=int(raw.get("max_videos_per_run", 2)),
+        quota_cooldown_hours=float(raw.get("quota_cooldown_hours", 6)),
         gemini_models=[m.strip() for m in models.split(",") if m.strip()],
         gemini_api_key=os.getenv("GEMINI_API_KEY", ""),
         youtube_api_key=os.getenv("YOUTUBE_API_KEY", ""),
