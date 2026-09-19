@@ -128,6 +128,9 @@ def person_line(p, ages: dict[str, int]) -> str:
     age = ages.get(p.name_en)
     if age:
         line += f" ({age})"
+    thesis = (getattr(p, "thesis_uk", "") or "").strip()
+    if thesis:
+        line += f"\n   ↳ {esc(thesis)}"
     return line
 
 

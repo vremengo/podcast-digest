@@ -24,7 +24,11 @@ def sample_digest(n_facts: int = 4, long: bool = False) -> gemini.Digest:
         headline="Хлої Кардаш'ян про подолання сорому, терапію та внутрішню силу після 40 років",
         people=[
             gemini.Person(name_uk="Джей Шетті", name_en="Jay Shetty", role_uk="автор бестселерів, ведучий подкасту On Purpose", is_host=True),
-            gemini.Person(name_uk="Хлої Кардаш'ян", name_en="Khloé Kardashian", role_uk="підприємниця, телеведуча, співзасновниця Good American", is_host=False),
+            gemini.Person(
+                name_uk="Хлої Кардаш'ян", name_en="Khloé Kardashian",
+                role_uk="підприємниця, телеведуча, співзасновниця Good American", is_host=False,
+                thesis_uk="Сором можна подолати лише через кордони, а не публічність",
+            ),
         ],
         lead="Розмова про переосмислення життєвих криз & відмову від <нав'язаного> сорому.",
         facts=[
@@ -86,6 +90,9 @@ def test_render_matches_template():
     # гість перед ведучим, з віком
     assert m.index("👤 Хлої Кардаш'ян – підприємниця") < m.index("🎤 Джей Шетті")
     assert "Good American (40)" in m and "On Purpose (36)" in m
+    # теза гості є, у ведучого (без thesis_uk) її немає
+    assert "↳ Сором можна подолати лише через кордони, а не публічність" in m
+    assert m.count("↳") == 1
     assert "· 👥 6,01 млн підписників" in m
     assert "· ⏱ 1 год 10 хв" in m
     assert "🗓 15.09.26 (15 год тому)" in m  # 15:00 за Києвом 15.09

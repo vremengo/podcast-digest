@@ -22,6 +22,7 @@ class Person(BaseModel):
     name_en: str
     role_uk: str
     is_host: bool
+    thesis_uk: str = ""  # головна теза/позиція цієї людини у ЦІЙ розмові, 1 коротке речення
 
 
 class Quote(BaseModel):
