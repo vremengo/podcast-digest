@@ -22,8 +22,16 @@ gemini_daily_budget_default: 50
 # Список YouTube-каналів. Можна вказати handle (@...) або id (UC...).
 # name — необов'язкова назва для посту (інакше береться назва каналу з YouTube).
 channels:
-  - handle: "@JayShetty"
-    name: "Jay Shetty · On Purpose"
-  # - handle: "@TheDiaryOfACEO"
-  # - handle: "@lexfridman"
-  # - id: "UCxxxxxxxxxxxxxxxxxxxxxx"
+  - handle: "@allin"
+    name: "All-In Podcast"
+  - handle: "@ycombinator"
+    name: "Y Combinator"
+  - handle: "@koliada_bio"
+  - handle: "@DwarkeshPatel"
+    name: "Dwarkesh Podcast"
+  - handle: "@a16z"
+  - handle: "@TheDiaryOfACEO"
+    name: "The Diary Of A CEO"
+  - handle: "@garyseconomics"
+  - handle: "@TheEconomist"
+    name: "The Economist"
