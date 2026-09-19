@@ -240,23 +240,26 @@ def _client(behaviours):
 def test_gemini_uses_video_url_without_transcript_and_falls_back_on_quota():
     err429 = gemini.errors.ClientError(429, {"error": {"message": "quota", "status": "RESOURCE_EXHAUSTED"}})
     client = _client([err429, sample_digest()])
-    d, model = gemini.summarize("k", ["m1", "m2"], "prompt", "https://www.youtube.com/watch?v=abcdefghijk", None, client=client)
+    d, model, calls_made = gemini.summarize("k", ["m1", "m2"], "prompt", "https://www.youtube.com/watch?v=abcdefghijk", None, client=client)
     assert model == "m2" and d.headline
+    assert calls_made == 2
     part = client.models.calls[0][1][0]
     assert part.file_data.file_uri.endswith("abcdefghijk") and part.video_metadata.fps == gemini.VIDEO_FPS
 
 
 def test_gemini_quota_exhausted_everywhere():
     err = lambda: gemini.errors.ClientError(429, {"error": {"message": "quota"}})
-    with pytest.raises(gemini.QuotaExhausted):
+    with pytest.raises(gemini.QuotaExhausted) as exc_info:
         gemini.summarize("k", ["m1", "m2"], "p", "u", "text", client=_client([err(), err()]))
+    assert exc_info.value.calls_made == 2
 
 
 def test_gemini_retries_invalid_output():
     bad = sample_digest(n_facts=1)
     client = _client([bad, sample_digest()])
-    d, _ = gemini.summarize("k", ["m1"], "p", "u", "transcript", client=client)
+    d, _, calls_made = gemini.summarize("k", ["m1"], "p", "u", "transcript", client=client)
     assert len(d.facts) == 4
+    assert calls_made == 2
     assert client.models.calls[0][1][1].text.startswith("Транскрипт")
 
 
@@ -289,7 +292,7 @@ def test_end_to_end(tmp_path, monkeypatch):
     monkeypatch.setattr(youtube, "fetch_videos", fake_videos)
     monkeypatch.setattr(youtube, "fetch_channel", lambda cid, k: youtube.Channel(cid, "Jay Shetty", 6_010_000, "@jayshetty"))
     monkeypatch.setattr(app.transcript, "get_transcript", lambda vid: None)
-    monkeypatch.setattr(gemini, "summarize", lambda *a, **k: (sample_digest(), "m1"))
+    monkeypatch.setattr(gemini, "summarize", lambda *a, **k: (sample_digest(), "m1", 1))
     monkeypatch.setattr(wikidata, "get_age", lambda name, today=None: {"Jay Shetty": 38}.get(name))
     sent = []
     monkeypatch.setattr(app.telegram, "send_message", lambda tok, chat, text: sent.append(text) or len(sent))
@@ -315,6 +318,56 @@ def test_failure_is_retried_then_given_up(tmp_path):
         assert not s.is_done("v")
         s.mark("v", "failed", "boom")
     assert s.is_done("v")
+
+
+def test_budget_tracks_calls_and_rolls_over_at_day_boundary(tmp_path):
+    s = State(tmp_path / "s.json")
+    assert s.budget_remaining(NOW, default_budget=50) == 50
+    s.record_gemini_calls(3, NOW)
+    assert s.gemini_calls_today == 3
+    assert s.budget_remaining(NOW, default_budget=50) == 47
+    # наступна доба — лічильник скидається
+    next_day = NOW + timedelta(days=1)
+    assert s.budget_remaining(next_day, default_budget=50) == 50
+    assert s.gemini_calls_today == 0
+
+
+def test_budget_calibrates_down_on_quota_hit_with_floor(tmp_path):
+    s = State(tmp_path / "s.json")
+    s.record_gemini_calls(20, NOW)
+    s.note_quota_hit(NOW, default_budget=50)
+    # спостережена стеля 20 - запас 5 = 15
+    assert s.gemini_daily_budget == 15
+    assert s.budget_remaining(NOW, default_budget=50) == 0
+
+    # наступного дня новий (нижчий) бюджет застосовується одразу з ранку
+    next_day = NOW + timedelta(days=1)
+    assert s.budget_remaining(next_day, default_budget=50) == 15
+
+    # калібрування ніколи не опускає бюджет нижче MIN_BUDGET
+    s2 = State(tmp_path / "s2.json")
+    s2.record_gemini_calls(2, NOW)
+    s2.note_quota_hit(NOW, default_budget=50)
+    from digest.state import MIN_BUDGET
+    assert s2.gemini_daily_budget == MIN_BUDGET
+
+    # калібрування ніколи не підвищує вже калібрований (нижчий) бюджет
+    s.record_gemini_calls(100, next_day)
+    s.note_quota_hit(next_day, default_budget=50)
+    assert s.gemini_daily_budget == 15
+
+
+def test_budget_persists_across_save_and_load(tmp_path):
+    path = tmp_path / "s.json"
+    s = State(path)
+    s.record_gemini_calls(5, NOW)
+    s.note_quota_hit(NOW, default_budget=50)
+    s.save()
+
+    s2 = State(path)
+    assert s2.gemini_day == NOW.strftime("%Y-%m-%d")
+    assert s2.gemini_calls_today == 5
+    assert s2.gemini_daily_budget == s.gemini_daily_budget
 
 
 def test_extract_video_id():

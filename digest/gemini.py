@@ -99,8 +99,9 @@ def summarize(
     video_url: str,
     transcript: str | None,
     client: genai.Client | None = None,
-) -> tuple[Digest, str]:
-    """Повертає (дайджест, назва моделі). Кидає QuotaExhausted або DigestError."""
+) -> tuple[Digest, str, int]:
+    """Повертає (дайджест, назва моделі, кількість реальних викликів API).
+    Кидає QuotaExhausted або DigestError — обидва з атрибутом .calls_made."""
     client = client or genai.Client(api_key=api_key)
     contents = build_contents(prompt, video_url, transcript)
     config = types.GenerateContentConfig(
@@ -110,16 +111,18 @@ def summarize(
         media_resolution=None if transcript else types.MediaResolution.MEDIA_RESOLUTION_LOW,
     )
     quota_hits = 0
+    calls_made = 0
     last_err: Exception | None = None
     for model in models:
         for attempt in range(3):
+            calls_made += 1
             try:
                 resp = client.models.generate_content(model=model, contents=contents, config=config)
                 digest = resp.parsed if isinstance(resp.parsed, Digest) else Digest.model_validate_json(resp.text or "")
                 problems = validate(digest)
                 if problems:
                     raise DigestError("Невалідна відповідь: " + ", ".join(problems))
-                return digest, model
+                return digest, model, calls_made
             except errors.ClientError as e:
                 last_err = e
                 code = getattr(e, "code", None)
@@ -131,7 +134,9 @@ def summarize(
                     # 404 — модель недоступна/перейменована; 400 — напр. відео недоступне для цієї моделі
                     log.warning("%s: %s %s", model, code, str(e)[:300])
                     break
-                raise DigestError(str(e)) from e
+                err = DigestError(str(e))
+                err.calls_made = calls_made
+                raise err from e
             except errors.ServerError as e:
                 last_err = e
                 wait = 20 * (attempt + 1)
@@ -141,5 +146,9 @@ def summarize(
                 last_err = e
                 log.warning("%s: %s (спроба %d)", model, e, attempt + 1)
     if quota_hits == len(models):
-        raise QuotaExhausted(str(last_err))
-    raise DigestError(f"Не вдалося отримати дайджест: {last_err}")
+        err = QuotaExhausted(str(last_err))
+        err.calls_made = calls_made
+        raise err
+    err = DigestError(f"Не вдалося отримати дайджест: {last_err}")
+    err.calls_made = calls_made
+    raise err

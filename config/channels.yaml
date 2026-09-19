@@ -10,25 +10,20 @@ min_duration_minutes: 30
 # Беремо лише випуски, опубліковані за останні N годин (захист від «флуду» старими відео)
 lookback_hours: 48
 
-# Скільки випусків обробляти за один запуск — менше видно, щоб не впертись у добовий ліміт запитів Gemini
-max_videos_per_run: 1
+# Скільки випусків обробляти за один запуск — це лише «стеля на один запуск»,
+# реальне денне обмеження тепер тримає gemini_daily_budget_default нижче
+max_videos_per_run: 3
 
-# Якщо вичерпали безкоштовну добову квоту Gemini — на скільки годин ставимо паузу перед наступною спробою
-quota_cooldown_hours: 6
+# Стартова оцінка, скільки запитів до Gemini можна зробити за добу (безкоштовний тариф).
+# Точного ліміту Google не публікує — бот сам калібрує це число вниз, щойно реально впреться в 429,
+# і більше не гадає. Це лише стартова точка для першого дня.
+gemini_daily_budget_default: 50
 
 # Список YouTube-каналів. Можна вказати handle (@...) або id (UC...).
 # name — необов'язкова назва для посту (інакше береться назва каналу з YouTube).
 channels:
-  - handle: "@allin"
-    name: "All-In Podcast"
-  - handle: "@ycombinator"
-    name: "Y Combinator"
-  - handle: "@koliada_bio"
-  - handle: "@DwarkeshPatel"
-    name: "Dwarkesh Podcast"
-  - handle: "@a16z"
-  - handle: "@TheDiaryOfACEO"
-    name: "The Diary Of A CEO"
-  - handle: "@garyseconomics"
-  - handle: "@TheEconomist"
-    name: "The Economist"
+  - handle: "@JayShetty"
+    name: "Jay Shetty · On Purpose"
+  # - handle: "@TheDiaryOfACEO"
+  # - handle: "@lexfridman"
+  # - id: "UCxxxxxxxxxxxxxxxxxxxxxx"

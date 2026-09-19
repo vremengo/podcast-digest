@@ -78,10 +78,10 @@ def process(cfg: Config, state: State, video: youtube.Video, display_name: str |
     prompt = gemini.build_prompt(
         cfg.prompt_path, title=video.title, channel=channel_title, published=video.published.strftime("%Y-%m-%d")
     )
-    digest, model = gemini.summarize(cfg.gemini_api_key, cfg.gemini_models, prompt, video.url, text)
-    log.info("Модель: %s", model)
-    if not dry_run and state.quota_cooldown_until:
-        state.clear_quota_cooldown()
+    digest, model, calls_made = gemini.summarize(cfg.gemini_api_key, cfg.gemini_models, prompt, video.url, text)
+    log.info("Модель: %s (запитів Gemini: %d)", model, calls_made)
+    if not dry_run:
+        state.record_gemini_calls(calls_made, now)
 
     if not digest.is_substantive:
         log.info("Пропускаю: не змістовний випуск")
@@ -142,11 +142,9 @@ def main(argv: list[str] | None = None) -> int:
     state = State(cfg.state_path)
     now = datetime.now(timezone.utc)
 
-    if not args.video:
-        remaining = state.cooldown_remaining(now)
-        if remaining is not None:
-            log.info("Кулдаун після вичерпання квоти Gemini: ще %d хв — пропускаю цей запуск", remaining.total_seconds() // 60)
-            return 0
+    if not args.video and state.budget_remaining(now, cfg.gemini_daily_budget_default) <= 0:
+        log.info("Денний бюджет запитів Gemini (оцінка) вичерпано — пропускаю цей запуск, продовжу завтра")
+        return 0
 
     if args.video:
         vid = extract_video_id(args.video)
@@ -164,18 +162,25 @@ def main(argv: list[str] | None = None) -> int:
     log.info("Нових випусків: %d, обробляю до %d", len(queue), limit)
     failures = 0
     for video, name in queue[:limit]:
+        if not args.video and not args.dry_run and state.budget_remaining(now, cfg.gemini_daily_budget_default) <= 0:
+            log.info("Бюджет запитів Gemini на сьогодні вичерпано під час цього запуску — зупиняюсь, продовжу наступного разу")
+            break
         try:
             process(cfg, state, video, name, now, args.dry_run)
-        except gemini.QuotaExhausted:
+        except gemini.QuotaExhausted as e:
+            calls_made = getattr(e, "calls_made", 0)
             log.warning(
-                "Безкоштовний ліміт Gemini вичерпано — пауза на %.0f год, щоб не бити в той самий ліміт щораз",
-                cfg.quota_cooldown_hours,
+                "Безкоштовний ліміт Gemini вичерпано на всіх моделях (%d запитів цього разу) — каліброю денний бюджет і завершую запуск",
+                calls_made,
             )
             if not args.dry_run:
-                state.start_quota_cooldown(now, cfg.quota_cooldown_hours)
+                state.record_gemini_calls(calls_made, now)
+                state.note_quota_hit(now, cfg.gemini_daily_budget_default)
             break
         except Exception as e:
             failures += 1
+            if not args.dry_run:
+                state.record_gemini_calls(getattr(e, "calls_made", 0), now)
             log.exception("Помилка на %s: %s", video.video_id, e)
             if not args.dry_run and not state.is_done(video.video_id):
                 state.mark(video.video_id, "failed", f"{type(e).__name__}: {e}")
