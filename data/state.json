@@ -97,6 +97,12 @@
    "status": "posted",
    "ts": "2026-09-16T21:03:09+00:00"
   },
+  "JtomF4bGxHs": {
+   "attempts": 0,
+   "note": "коротке: 1432s",
+   "status": "skipped",
+   "ts": "2026-09-20T22:24:59+00:00"
+  },
   "K5yGLO8c6T0": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
