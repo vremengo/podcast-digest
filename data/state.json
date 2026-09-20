@@ -55,6 +55,12 @@
    "status": "skipped",
    "ts": "2026-09-19T20:36:53+00:00"
   },
+  "A2nb4ITBuZM": {
+   "attempts": 0,
+   "note": "коротке: 168s",
+   "status": "skipped",
+   "ts": "2026-09-20T11:18:53+00:00"
+  },
   "A4Q7zAayW20": {
    "attempts": 0,
    "note": "gemini-3.7-flash; 1/1 msg",
