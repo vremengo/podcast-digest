@@ -10,7 +10,7 @@
   "@theeconomist": "UC0p5jTq6Xx_DosDFxVXnWaQ",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 12,
  "gemini_day": "2026-09-22",
  "videos": {
   "-OIQs3xe9-I": {
@@ -187,6 +187,12 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "Z4x71naDx1Q": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-09-22T17:10:14+00:00"
+  },
   "ZO6VyDvysxY": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -222,6 +228,12 @@
    "note": "коротке: 71s",
    "status": "skipped",
    "ts": "2026-09-20T18:45:22+00:00"
+  },
+  "k11PYbX5kew": {
+   "attempts": 0,
+   "note": "коротке: 107s",
+   "status": "skipped",
+   "ts": "2026-09-22T16:54:55+00:00"
   },
   "lgQeAyi0cBE": {
    "attempts": 0,
