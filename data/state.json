@@ -61,6 +61,12 @@
    "status": "skipped",
    "ts": "2026-09-19T20:36:53+00:00"
   },
+  "9OzfCE_nEsk": {
+   "attempts": 0,
+   "note": "коротке: 165s",
+   "status": "skipped",
+   "ts": "2026-09-22T11:34:02+00:00"
+  },
   "A2nb4ITBuZM": {
    "attempts": 0,
    "note": "коротке: 168s",
@@ -84,6 +90,12 @@
    "note": "коротке: 82s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "Gnb-CfNPcPE": {
+   "attempts": 0,
+   "note": "коротке: 1060s",
+   "status": "skipped",
+   "ts": "2026-09-22T11:34:02+00:00"
   },
   "GzEtpAKYRvE": {
    "attempts": 0,
