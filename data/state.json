@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 18,
+ "gemini_calls_today": 24,
  "gemini_day": "2026-09-23",
  "videos": {
   "-OIQs3xe9-I": {
@@ -27,6 +27,12 @@
    "note": "коротке: 84s",
    "status": "skipped",
    "ts": "2026-09-18T20:52:37+00:00"
+  },
+  "0I07YAuF8xA": {
+   "attempts": 0,
+   "note": "коротке: 1349s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
   },
   "10LyXQZ2nk4": {
    "attempts": 0,
@@ -88,6 +94,18 @@
    "status": "posted",
    "ts": "2026-09-19T17:24:01+00:00"
   },
+  "A_I8mw8yfns": {
+   "attempts": 0,
+   "note": "коротке: 1097s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
+  },
+  "CGq9KRSb9Kc": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
+   "status": "failed",
+   "ts": "2026-09-23T18:23:19+00:00"
+  },
   "D5FZNQ-vqw8": {
    "attempts": 0,
    "note": "коротке: 106s",
@@ -99,6 +117,12 @@
    "note": "коротке: 45s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "FvA0ssAS--E": {
+   "attempts": 0,
+   "note": "коротке: 92s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
   },
   "FxwiNX6l5qA": {
    "attempts": 0,
@@ -178,6 +202,12 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "Q8yFrGwIftE": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-23T18:24:06+00:00"
+  },
   "QGKlOf_kThY": {
    "attempts": 0,
    "note": "коротке: 85s",
@@ -207,6 +237,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-19T12:29:35+00:00"
+  },
+  "T72nqdC92PM": {
+   "attempts": 0,
+   "note": "коротке: 1269s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
   },
   "VF90rBzl26E": {
    "attempts": 0,
@@ -256,11 +292,23 @@
    "status": "posted",
    "ts": "2026-09-20T16:02:51+00:00"
   },
+  "ZZcE0HeO-Hc": {
+   "attempts": 0,
+   "note": "коротке: 1242s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
+  },
   "a_GiFiHXJ6g": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-21T12:45:45+00:00"
+  },
+  "dKcTBQzR7jI": {
+   "attempts": 0,
+   "note": "коротке: 1154s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
   },
   "eo0Q7yTz4pc": {
    "attempts": 0,
@@ -273,6 +321,18 @@
    "note": "коротке: 158s",
    "status": "skipped",
    "ts": "2026-09-18T20:52:37+00:00"
+  },
+  "hY0ORaGEx_c": {
+   "attempts": 0,
+   "note": "коротке: 48s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
+  },
+  "jNE8No-wvok": {
+   "attempts": 0,
+   "note": "коротке: 1292s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
   },
   "jSM10gpdWLs": {
    "attempts": 0,
@@ -351,6 +411,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-19T12:29:20+00:00"
+  },
+  "ztlXKfPCT3Q": {
+   "attempts": 0,
+   "note": "коротке: 1106s",
+   "status": "skipped",
+   "ts": "2026-09-23T18:23:17+00:00"
   }
  }
 }
