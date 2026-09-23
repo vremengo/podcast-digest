@@ -10,8 +10,8 @@
   "@theeconomist": "UC0p5jTq6Xx_DosDFxVXnWaQ",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 14,
- "gemini_day": "2026-09-22",
+ "gemini_calls_today": 0,
+ "gemini_day": "2026-09-23",
  "videos": {
   "-OIQs3xe9-I": {
    "attempts": 0,
@@ -30,6 +30,12 @@
    "note": "коротке: 92s",
    "status": "skipped",
    "ts": "2026-09-18T20:52:37+00:00"
+  },
+  "5_ZkERt5siI": {
+   "attempts": 0,
+   "note": "коротке: 103s",
+   "status": "skipped",
+   "ts": "2026-09-23T00:29:33+00:00"
   },
   "64jq-3jziYM": {
    "attempts": 0,
