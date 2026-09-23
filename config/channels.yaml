@@ -35,3 +35,6 @@ channels:
   - handle: "@garyseconomics"
   - handle: "@TheEconomist"
     name: "The Economist"
+  - handle: "@tkppodcast"
+  - handle: "@aiDotEngineer"
+  - handle: "@GregIsenberg"
