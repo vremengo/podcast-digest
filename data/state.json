@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 24,
+ "gemini_calls_today": 29,
  "gemini_day": "2026-09-23",
  "videos": {
   "-OIQs3xe9-I": {
@@ -101,10 +101,10 @@
    "ts": "2026-09-23T18:23:17+00:00"
   },
   "CGq9KRSb9Kc": {
-   "attempts": 1,
+   "attempts": 2,
    "note": "DigestError: Не вдалося отримати дайджест: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
    "status": "failed",
-   "ts": "2026-09-23T18:23:19+00:00"
+   "ts": "2026-09-23T22:56:11+00:00"
   },
   "D5FZNQ-vqw8": {
    "attempts": 0,
@@ -160,6 +160,12 @@
    "status": "posted",
    "ts": "2026-09-16T21:03:09+00:00"
   },
+  "ISgqeLL5oeo": {
+   "attempts": 0,
+   "note": "коротке: 45s",
+   "status": "skipped",
+   "ts": "2026-09-23T22:56:09+00:00"
+  },
   "JtomF4bGxHs": {
    "attempts": 0,
    "note": "коротке: 1432s",
@@ -171,6 +177,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-17T19:14:40+00:00"
+  },
+  "N42VxP0D49Q": {
+   "attempts": 0,
+   "note": "коротке: 23s",
+   "status": "skipped",
+   "ts": "2026-09-23T22:56:09+00:00"
   },
   "NSzKc1TRJlo": {
    "attempts": 0,
@@ -310,6 +322,12 @@
    "status": "skipped",
    "ts": "2026-09-23T18:23:17+00:00"
   },
+  "e7s7jRgHWsg": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-23T22:56:30+00:00"
+  },
   "eo0Q7yTz4pc": {
    "attempts": 0,
    "note": "коротке: 124s",
@@ -405,6 +423,12 @@
    "note": "коротке: 127s",
    "status": "skipped",
    "ts": "2026-09-21T23:15:36+00:00"
+  },
+  "yYn7Y5xDSxI": {
+   "attempts": 0,
+   "note": "коротке: 16s",
+   "status": "skipped",
+   "ts": "2026-09-23T22:56:09+00:00"
   },
   "yslXlV2BP_Y": {
    "attempts": 1,
