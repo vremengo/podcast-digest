@@ -1,16 +1,19 @@
 {
  "channel_ids": {
   "@a16z": "UC9cn0TuPq4dnbTY-CBsm8XA",
+  "@aidotengineer": "UCLKPca3kwwd-B59HNr-_lvA",
   "@allin": "UCESLZhusAkFfsNsApnjF_Cg",
   "@dwarkeshpatel": "UCXl4i9dYBrFOabk0xGmbkRA",
   "@garyseconomics": "UC5Ghe5TBQGYIOANuiNW4hDQ",
+  "@gregisenberg": "UCPjNBjflYl0-HQtUvOx0Ibw",
   "@jayshetty": "UCbV60AGIHKz2xIGvbk0LLvg",
   "@koliada_bio": "UCJHw3Dd2Q98XHdGGEFPCMPA",
   "@thediaryofaceo": "UCGq-a57w-aPwyi3pW7XLiHw",
   "@theeconomist": "UC0p5jTq6Xx_DosDFxVXnWaQ",
+  "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 3,
+ "gemini_calls_today": 18,
  "gemini_day": "2026-09-23",
  "videos": {
   "-OIQs3xe9-I": {
@@ -103,6 +106,12 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "GhU9yBxMR1U": {
+   "attempts": 0,
+   "note": "коротке: 127s",
+   "status": "skipped",
+   "ts": "2026-09-23T13:37:05+00:00"
+  },
   "Gnb-CfNPcPE": {
    "attempts": 0,
    "note": "коротке: 1060s",
@@ -175,11 +184,23 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "RQi7x-navxU": {
+   "attempts": 0,
+   "note": "коротке: 1264s",
+   "status": "skipped",
+   "ts": "2026-09-23T13:37:05+00:00"
+  },
   "SDbRJXQrYGY": {
    "attempts": 1,
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-19T12:29:04+00:00"
+  },
+  "SQMCtZX3trg": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-23T13:42:52+00:00"
   },
   "SwBCPBNe_60": {
    "attempts": 0,
@@ -199,6 +220,12 @@
    "status": "posted",
    "ts": "2026-09-19T17:18:43+00:00"
   },
+  "W6dsLthcvzU": {
+   "attempts": 0,
+   "note": "коротке: 1611s",
+   "status": "skipped",
+   "ts": "2026-09-23T13:37:05+00:00"
+  },
   "W6fL5aGybMo": {
    "attempts": 0,
    "note": "коротке: 45s",
@@ -210,6 +237,12 @@
    "note": "коротке: 31s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "YuOSyRj3sXg": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-23T13:50:17+00:00"
   },
   "Z4x71naDx1Q": {
    "attempts": 1,
