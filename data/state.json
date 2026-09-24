@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 19,
  "gemini_day": "2026-09-24",
  "videos": {
   "-OIQs3xe9-I": {
@@ -64,6 +64,12 @@
    "status": "posted",
    "ts": "2026-09-17T21:20:11+00:00"
   },
+  "6t5yF8ansoQ": {
+   "attempts": 0,
+   "note": "коротке: 1530s",
+   "status": "skipped",
+   "ts": "2026-09-24T11:41:25+00:00"
+  },
   "7a6BfbZiDV4": {
    "attempts": 0,
    "note": "коротке: 105s",
@@ -102,9 +108,9 @@
   },
   "CGq9KRSb9Kc": {
    "attempts": 2,
-   "note": "DigestError: Не вдалося отримати дайджест: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
-   "status": "failed",
-   "ts": "2026-09-23T22:56:11+00:00"
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-24T11:48:48+00:00"
   },
   "D5FZNQ-vqw8": {
    "attempts": 0,
@@ -255,6 +261,12 @@
    "note": "коротке: 1269s",
    "status": "skipped",
    "ts": "2026-09-23T18:23:17+00:00"
+  },
+  "UhzI1fg8rCA": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-09-24T12:00:53+00:00"
   },
   "VF90rBzl26E": {
    "attempts": 0,
