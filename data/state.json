@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 38,
+ "gemini_calls_today": 45,
  "gemini_day": "2026-09-24",
  "videos": {
   "-OIQs3xe9-I": {
@@ -48,9 +48,9 @@
   },
   "4Gqg0HVe-AY": {
    "attempts": 1,
-   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
-   "status": "failed",
-   "ts": "2026-09-24T17:29:45+00:00"
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-24T21:29:28+00:00"
   },
   "5_ZkERt5siI": {
    "attempts": 0,
@@ -87,6 +87,18 @@
    "note": "коротке: 105s",
    "status": "skipped",
    "ts": "2026-09-17T21:19:34+00:00"
+  },
+  "84q4WA3kA8Q": {
+   "attempts": 0,
+   "note": "коротке: 1576s",
+   "status": "skipped",
+   "ts": "2026-09-24T21:28:56+00:00"
+  },
+  "8DsalSn5tUk": {
+   "attempts": 0,
+   "note": "коротке: 81s",
+   "status": "skipped",
+   "ts": "2026-09-24T21:28:56+00:00"
   },
   "8Zyn8yndxfA": {
    "attempts": 0,
@@ -171,6 +183,12 @@
    "note": "коротке: 407s",
    "status": "skipped",
    "ts": "2026-09-18T16:21:58+00:00"
+  },
+  "IEMG9lkc4lA": {
+   "attempts": 0,
+   "note": "коротке: 123s",
+   "status": "skipped",
+   "ts": "2026-09-24T21:28:56+00:00"
   },
   "IR_JOaYJnVE": {
    "attempts": 3,
@@ -388,6 +406,12 @@
    "status": "skipped",
    "ts": "2026-09-24T17:07:32+00:00"
   },
+  "g0vqT_wZtXA": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'The input token count exceeds the maximum number of tokens allowed 1048576.', 'status': 'INVALID_AR",
+   "status": "failed",
+   "ts": "2026-09-24T21:34:42+00:00"
+  },
   "hIzX6r3IQbg": {
    "attempts": 0,
    "note": "коротке: 144s",
@@ -399,6 +423,12 @@
    "note": "коротке: 48s",
    "status": "skipped",
    "ts": "2026-09-23T18:23:17+00:00"
+  },
+  "iGY7httJjQA": {
+   "attempts": 0,
+   "note": "коротке: 144s",
+   "status": "skipped",
+   "ts": "2026-09-24T21:28:56+00:00"
   },
   "jFHteJjRl8A": {
    "attempts": 0,
