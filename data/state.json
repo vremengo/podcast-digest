@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 12,
+ "gemini_calls_today": 22,
  "gemini_day": "2026-09-25",
  "videos": {
   "-OIQs3xe9-I": {
@@ -28,6 +28,12 @@
    "status": "skipped",
    "ts": "2026-09-18T20:52:37+00:00"
   },
+  "-ywZlfznTa4": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-25T18:34:54+00:00"
+  },
   "0I07YAuF8xA": {
    "attempts": 0,
    "note": "коротке: 1349s",
@@ -39,6 +45,12 @@
    "note": "коротке: 92s",
    "status": "skipped",
    "ts": "2026-09-18T20:52:37+00:00"
+  },
+  "2LRIAfng7eA": {
+   "attempts": 0,
+   "note": "коротке: 1180s",
+   "status": "skipped",
+   "ts": "2026-09-25T18:34:11+00:00"
   },
   "2wgPHvW0mG8": {
    "attempts": 0,
@@ -123,6 +135,12 @@
    "note": "gemini-3.7-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-19T17:24:01+00:00"
+  },
+  "ACPEpji5NV4": {
+   "attempts": 0,
+   "note": "коротке: 1331s",
+   "status": "skipped",
+   "ts": "2026-09-25T18:34:11+00:00"
   },
   "A_I8mw8yfns": {
    "attempts": 0,
@@ -400,6 +418,18 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "f6cjAEr08qk": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-25T18:41:16+00:00"
+  },
+  "fI2VOfTxWjI": {
+   "attempts": 0,
+   "note": "коротке: 145s",
+   "status": "skipped",
+   "ts": "2026-09-25T18:34:11+00:00"
+  },
   "fSVn-0Hgt64": {
    "attempts": 0,
    "note": "коротке: 158s",
@@ -477,6 +507,12 @@
    "note": "коротке: 107s",
    "status": "skipped",
    "ts": "2026-09-22T16:54:55+00:00"
+  },
+  "lIgdnF0s0kQ": {
+   "attempts": 0,
+   "note": "коротке: 1081s",
+   "status": "skipped",
+   "ts": "2026-09-25T18:34:11+00:00"
   },
   "lgQeAyi0cBE": {
    "attempts": 0,
