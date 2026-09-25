@@ -63,6 +63,10 @@ def collect_candidates(cfg: Config, state: State, now: datetime) -> list[tuple[y
         if v.duration_s < cfg.min_duration_minutes * 60:
             state.mark(v.video_id, "skipped", f"коротке: {v.duration_s}s")
             continue
+        if v.duration_s > cfg.max_duration_minutes * 60:
+            # напр. конференційний стрім на цілий день — не влізе в контекст моделі, не витрачаємо запит
+            state.mark(v.video_id, "skipped", f"задовге: {v.duration_s}s")
+            continue
         result.append((v, names.get(v.channel_id)))
     result.sort(key=lambda t: t[0].published)
     return result
@@ -177,6 +181,12 @@ def main(argv: list[str] | None = None) -> int:
                 state.record_gemini_calls(calls_made, now)
                 state.note_quota_hit(now, cfg.gemini_daily_budget_default)
             break
+        except gemini.TooLarge as e:
+            # не помилка запуску: повтори не допоможуть, тож просто закриваємо це відео
+            log.warning("Пропускаю %s: %s", video.video_id, e)
+            if not args.dry_run:
+                state.record_gemini_calls(getattr(e, "calls_made", 0), now)
+                state.mark(video.video_id, "skipped", f"задовге для Gemini: {e}")
         except Exception as e:
             failures += 1
             if not args.dry_run:

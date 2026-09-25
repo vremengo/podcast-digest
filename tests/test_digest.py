@@ -254,6 +254,54 @@ def test_gemini_quota_exhausted_everywhere():
     assert exc_info.value.calls_made == 2
 
 
+def test_gemini_too_large_stops_immediately():
+    """400 про переповнений контекст — вікно однакове в усіх моделях, решту не пробуємо."""
+    err = gemini.errors.ClientError(400, {"error": {
+        "code": 400,
+        "message": "The input token count exceeds the maximum number of tokens allowed 1048576.",
+        "status": "INVALID_ARGUMENT",
+    }})
+    client = _client([err, sample_digest(), sample_digest(), sample_digest()])
+    with pytest.raises(gemini.TooLarge) as exc_info:
+        gemini.summarize("k", ["m1", "m2", "m3", "m4"], "p", "u", None, client=client)
+    assert exc_info.value.calls_made == 1
+    assert len(client.models.calls) == 1  # інші моделі навіть не смикали
+    assert isinstance(exc_info.value, gemini.DigestError)
+
+
+def test_too_large_video_is_skipped_without_failing_the_run(tmp_path, monkeypatch):
+    """Задовге відео закривається як «пропущене», а не валить увесь запуск у червоне."""
+    cfg = Config(
+        channels=[ChannelEntry(handle="@JayShetty")],
+        gemini_api_key="g", youtube_api_key="y", telegram_bot_token="t", telegram_chat_id="@c",
+        gemini_models=["m1"], state_path=tmp_path / "state.json", lookback_hours=24 * 3650,
+    )
+    monkeypatch.setattr(app, "load_config", lambda: cfg)
+    monkeypatch.setattr(youtube, "resolve_channel_id", lambda h, k: "UCchannel000000000000000")
+    monkeypatch.setattr(youtube, "fetch_feed", lambda cid: youtube.parse_feed(FEED, cid)[:1])
+    monkeypatch.setattr(youtube, "fetch_videos", lambda ids, key: {
+        i: youtube.Video(i, "UCchannel000000000000000", "t", "JS", NOW - timedelta(hours=3), 4212, 34200, "none")
+        for i in ids})
+    monkeypatch.setattr(youtube, "fetch_channel", lambda cid, k: youtube.Channel(cid, "JS", 100, "@js"))
+    monkeypatch.setattr(app.transcript, "get_transcript", lambda vid: None)
+
+    def boom(*a, **k):
+        e = gemini.TooLarge("відео не влазить у контекст моделі (1M токенів)")
+        e.calls_made = 1
+        raise e
+
+    monkeypatch.setattr(gemini, "summarize", boom)
+    sent = []
+    monkeypatch.setattr(app.telegram, "send_message", lambda tok, chat, text: sent.append(text))
+
+    assert app.main([]) == 0  # запуск зелений, попри те що відео не обробилось
+    assert sent == []
+    st = json.loads(cfg.state_path.read_text())
+    entry = st["videos"]["abcdefghijk"]
+    assert entry["status"] == "skipped" and entry["attempts"] == 0
+    assert st["gemini_calls_today"] == 1  # витрачений запит усе одно врахований у бюджеті
+
+
 def test_gemini_retries_invalid_output():
     bad = sample_digest(n_facts=1)
     client = _client([bad, sample_digest()])
@@ -279,13 +327,14 @@ def test_end_to_end(tmp_path, monkeypatch):
     monkeypatch.setattr(app, "load_config", lambda: cfg)
     monkeypatch.setattr(youtube, "resolve_channel_id", lambda h, k: "UCchannel000000000000000")
     monkeypatch.setattr(youtube, "fetch_feed", lambda cid: youtube.parse_feed(FEED, cid) + [
-        youtube.FeedItem("shortshort1", cid, "short", datetime.now(timezone.utc) - timedelta(hours=1))])
+        youtube.FeedItem("shortshort1", cid, "short", datetime.now(timezone.utc) - timedelta(hours=1)),
+        youtube.FeedItem("toolongvid1", cid, "конференція на цілий день", datetime.now(timezone.utc) - timedelta(hours=1))])
 
     def fake_videos(ids, key):
         now = datetime.now(timezone.utc)
         out = {}
         for i in ids:
-            dur = 50 if i == "shortshort1" else 4212
+            dur = 50 if i == "shortshort1" else 31454 if i == "toolongvid1" else 4212
             out[i] = youtube.Video(i, "UCchannel000000000000000", "t", "JS", now - timedelta(hours=3), dur, 34200, "none")
         return out
 
@@ -306,6 +355,9 @@ def test_end_to_end(tmp_path, monkeypatch):
     assert st["channel_ids"]["@jayshetty"] == "UCchannel000000000000000"
     assert st["videos"]["shortshort1"]["status"] == "skipped"
     assert st["videos"]["abcdefghijk"]["status"] == "posted"
+    # 8+ год конференції відсікаються за тривалістю — без жодного запиту до Gemini
+    assert st["videos"]["toolongvid1"]["status"] == "skipped"
+    assert "задовге" in st["videos"]["toolongvid1"]["note"]
 
     # повторний запуск нічого не публікує
     assert app.main([]) == 0

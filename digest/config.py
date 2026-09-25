@@ -27,6 +27,9 @@ class Config:
     channels: list[ChannelEntry]
     timezone: str = "Europe/Kyiv"
     min_duration_minutes: int = 30
+    # Стеля: у 1M токенів Gemini влазить ~7.5 год відео при нашій дискретизації (0.1 fps + аудіо).
+    # Беремо із запасом — довші записи (конференції на цілий день) відсікаємо без жодного запиту.
+    max_duration_minutes: int = 360
     lookback_hours: int = 48
     max_videos_per_run: int = 2
     gemini_daily_budget_default: int = 50  # стартова оцінка; калібрується вниз автоматично після першого 429
@@ -56,6 +59,7 @@ def load_config(path: Path | None = None) -> Config:
         channels=channels,
         timezone=raw.get("timezone", "Europe/Kyiv"),
         min_duration_minutes=int(raw.get("min_duration_minutes", 30)),
+        max_duration_minutes=int(raw.get("max_duration_minutes", 360)),
         lookback_hours=int(raw.get("lookback_hours", 48)),
         max_videos_per_run=int(raw.get("max_videos_per_run", 2)),
         gemini_daily_budget_default=int(raw.get("gemini_daily_budget_default", 50)),

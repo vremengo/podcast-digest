@@ -58,6 +58,14 @@ class DigestError(Exception):
     pass
 
 
+class TooLarge(DigestError):
+    """Відео не влазить у контекст моделі (1M токенів). Повтори не допоможуть — пропускаємо назавжди."""
+
+
+# Google відповідає на задовге відео 400 INVALID_ARGUMENT саме з цим текстом
+_TOO_LARGE = "input token count exceeds"
+
+
 def build_prompt(template_path: Path, title: str, channel: str, published: str) -> str:
     return template_path.read_text(encoding="utf-8").format(title=title, channel=channel, published=published)
 
@@ -130,6 +138,11 @@ def summarize(
                     log.warning("%s: ліміт безкоштовного тарифу (429), пробую наступну модель", model)
                     quota_hits += 1
                     break
+                if code == 400 and _TOO_LARGE in str(e):
+                    # Вікно в 1M токенів однакове в усіх flash-моделях — решту навіть не пробуємо
+                    err = TooLarge("відео не влазить у контекст моделі (1M токенів)")
+                    err.calls_made = calls_made
+                    raise err from e
                 if code in (400, 403, 404):
                     # 404 — модель недоступна/перейменована; 400 — напр. відео недоступне для цієї моделі
                     log.warning("%s: %s %s", model, code, str(e)[:300])
