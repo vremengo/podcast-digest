@@ -466,6 +466,12 @@
    "status": "skipped",
    "ts": "2026-09-24T21:28:56+00:00"
   },
+  "j7Ee8hMme3c": {
+   "attempts": 0,
+   "note": "коротке: 143s",
+   "status": "skipped",
+   "ts": "2026-09-25T23:17:32+00:00"
+  },
   "jFHteJjRl8A": {
    "attempts": 0,
    "note": "коротке: 1698s",
@@ -531,6 +537,12 @@
    "note": "коротке: 122s",
    "status": "skipped",
    "ts": "2026-09-21T19:25:11+00:00"
+  },
+  "nHkYf3iGlRE": {
+   "attempts": 0,
+   "note": "коротке: 38s",
+   "status": "skipped",
+   "ts": "2026-09-25T23:17:32+00:00"
   },
   "nOaaqYhBwcA": {
    "attempts": 0,
