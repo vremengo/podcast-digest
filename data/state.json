@@ -13,8 +13,8 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 45,
- "gemini_day": "2026-09-24",
+ "gemini_calls_today": 5,
+ "gemini_day": "2026-09-25",
  "videos": {
   "-OIQs3xe9-I": {
    "attempts": 0,
@@ -220,6 +220,12 @@
    "status": "posted",
    "ts": "2026-09-17T19:14:40+00:00"
   },
+  "KDcXfqm2cFM": {
+   "attempts": 0,
+   "note": "коротке: 113s",
+   "status": "skipped",
+   "ts": "2026-09-25T00:32:35+00:00"
+  },
   "N42VxP0D49Q": {
    "attempts": 0,
    "note": "коротке: 23s",
@@ -407,10 +413,10 @@
    "ts": "2026-09-24T17:07:32+00:00"
   },
   "g0vqT_wZtXA": {
-   "attempts": 1,
+   "attempts": 2,
    "note": "DigestError: Не вдалося отримати дайджест: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'The input token count exceeds the maximum number of tokens allowed 1048576.', 'status': 'INVALID_AR",
    "status": "failed",
-   "ts": "2026-09-24T21:34:42+00:00"
+   "ts": "2026-09-25T00:34:13+00:00"
   },
   "hIzX6r3IQbg": {
    "attempts": 0,
@@ -459,6 +465,12 @@
    "note": "коротке: 1248s",
    "status": "skipped",
    "ts": "2026-09-24T17:07:32+00:00"
+  },
+  "jlPNUtNnFvs": {
+   "attempts": 0,
+   "note": "коротке: 82s",
+   "status": "skipped",
+   "ts": "2026-09-25T00:32:35+00:00"
   },
   "k11PYbX5kew": {
    "attempts": 0,
