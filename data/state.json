@@ -160,6 +160,12 @@
    "status": "posted",
    "ts": "2026-09-24T11:48:48+00:00"
   },
+  "Chvl3F3KmmM": {
+   "attempts": 0,
+   "note": "коротке: 43s",
+   "status": "skipped",
+   "ts": "2026-09-26T21:07:06+00:00"
+  },
   "D5FZNQ-vqw8": {
    "attempts": 0,
    "note": "коротке: 106s",
@@ -279,6 +285,12 @@
    "note": "коротке: 392s",
    "status": "skipped",
    "ts": "2026-09-18T20:52:37+00:00"
+  },
+  "OA-Mc60Rboo": {
+   "attempts": 0,
+   "note": "коротке: 1288s",
+   "status": "skipped",
+   "ts": "2026-09-26T21:07:06+00:00"
   },
   "OhOmLqR5nN4": {
    "attempts": 0,
@@ -423,6 +435,12 @@
    "note": "коротке: 1242s",
    "status": "skipped",
    "ts": "2026-09-23T18:23:17+00:00"
+  },
+  "_Wn0CUjFZWQ": {
+   "attempts": 0,
+   "note": "коротке: 47s",
+   "status": "skipped",
+   "ts": "2026-09-26T21:07:06+00:00"
   },
   "aSch4W4-aLM": {
    "attempts": 0,
@@ -604,6 +622,12 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "oVsEddfhdxc": {
+   "attempts": 0,
+   "note": "коротке: 1179s",
+   "status": "skipped",
+   "ts": "2026-09-26T21:07:06+00:00"
+  },
   "qACa-auyy2c": {
    "attempts": 0,
    "note": "коротке: 179s",
@@ -627,6 +651,18 @@
    "note": "коротке: 450s",
    "status": "skipped",
    "ts": "2026-09-26T16:20:36+00:00"
+  },
+  "vwIj7vU1MHA": {
+   "attempts": 0,
+   "note": "коротке: 107s",
+   "status": "skipped",
+   "ts": "2026-09-26T21:07:06+00:00"
+  },
+  "x4e5O9zN0TE": {
+   "attempts": 0,
+   "note": "коротке: 1287s",
+   "status": "skipped",
+   "ts": "2026-09-26T21:07:06+00:00"
   },
   "yAsrMA_ADPc": {
    "attempts": 0,
