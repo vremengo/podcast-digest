@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 2,
  "gemini_day": "2026-09-26",
  "videos": {
   "-OIQs3xe9-I": {
@@ -244,6 +244,12 @@
    "status": "skipped",
    "ts": "2026-09-25T00:32:35+00:00"
   },
+  "MwHp-sU0lso": {
+   "attempts": 0,
+   "note": "коротке: 180s",
+   "status": "skipped",
+   "ts": "2026-09-26T11:20:34+00:00"
+  },
   "N42VxP0D49Q": {
    "attempts": 0,
    "note": "коротке: 23s",
@@ -399,6 +405,18 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-21T12:45:45+00:00"
+  },
+  "c82RCWeQT00": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-26T11:21:39+00:00"
+  },
+  "cvP_1jmnkmM": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-26T11:21:11+00:00"
   },
   "dKcTBQzR7jI": {
    "attempts": 0,
