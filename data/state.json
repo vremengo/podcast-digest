@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 2,
+ "gemini_calls_today": 11,
  "gemini_day": "2026-09-28",
  "videos": {
   "-OIQs3xe9-I": {
@@ -201,6 +201,12 @@
    "note": "коротке: 106s",
    "status": "skipped",
    "ts": "2026-09-22T21:16:08+00:00"
+  },
+  "DFCfEHD22RY": {
+   "attempts": 0,
+   "note": "коротке: 77s",
+   "status": "skipped",
+   "ts": "2026-09-28T20:32:38+00:00"
   },
   "Fp4a4CaI-74": {
    "attempts": 0,
@@ -430,6 +436,12 @@
    "status": "posted",
    "ts": "2026-09-24T17:12:39+00:00"
   },
+  "Ut3LOjKNJaE": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-28T20:40:32+00:00"
+  },
   "VF90rBzl26E": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -489,6 +501,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-20T16:02:51+00:00"
+  },
+  "ZT4mpjx0JnE": {
+   "attempts": 0,
+   "note": "коротке: 1790s",
+   "status": "skipped",
+   "ts": "2026-09-28T20:32:38+00:00"
   },
   "ZZcE0HeO-Hc": {
    "attempts": 0,
@@ -717,6 +735,12 @@
    "note": "коротке: 43s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "tEgNtsyKlLQ": {
+   "attempts": 0,
+   "note": "коротке: 101s",
+   "status": "skipped",
+   "ts": "2026-09-28T20:32:38+00:00"
   },
   "tUPPVhBBcoM": {
    "attempts": 0,
