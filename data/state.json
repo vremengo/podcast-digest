@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 6,
+ "gemini_calls_today": 34,
  "gemini_day": "2026-09-29",
  "videos": {
   "-OIQs3xe9-I": {
@@ -99,6 +99,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-17T21:20:11+00:00"
+  },
+  "6MudaeKdBSk": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-09-29T15:12:12+00:00"
   },
   "6t5yF8ansoQ": {
    "attempts": 0,
@@ -237,6 +243,12 @@
    "note": "коротке: 407s",
    "status": "skipped",
    "ts": "2026-09-18T16:21:58+00:00"
+  },
+  "HvboD89DyQ8": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-09-29T15:01:02+00:00"
   },
   "IEMG9lkc4lA": {
    "attempts": 0,
@@ -490,6 +502,12 @@
    "status": "skipped",
    "ts": "2026-09-29T01:54:48+00:00"
   },
+  "aNlyndOIEBU": {
+   "attempts": 0,
+   "note": "коротке: 91s",
+   "status": "skipped",
+   "ts": "2026-09-29T14:45:40+00:00"
+  },
   "aSch4W4-aLM": {
    "attempts": 0,
    "note": "коротке: 109s",
@@ -640,6 +658,12 @@
    "status": "skipped",
    "ts": "2026-09-25T18:34:11+00:00"
   },
+  "la5zN0-pi_k": {
+   "attempts": 0,
+   "note": "коротке: 79s",
+   "status": "skipped",
+   "ts": "2026-09-29T14:45:40+00:00"
+  },
   "lgQeAyi0cBE": {
    "attempts": 0,
    "note": "коротке: 97s",
@@ -705,6 +729,12 @@
    "note": "коротке: 101s",
    "status": "skipped",
    "ts": "2026-09-28T20:32:38+00:00"
+  },
+  "vGCJ7diEtrw": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-29T14:50:25+00:00"
   },
   "vkecOqfTh_I": {
    "attempts": 0,
