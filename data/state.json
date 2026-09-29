@@ -13,8 +13,8 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 11,
- "gemini_day": "2026-09-28",
+ "gemini_calls_today": 0,
+ "gemini_day": "2026-09-29",
  "videos": {
   "-OIQs3xe9-I": {
    "attempts": 0,
@@ -147,6 +147,12 @@
    "note": "коротке: 110s",
    "status": "skipped",
    "ts": "2026-09-19T20:36:53+00:00"
+  },
+  "91d3fgcq3wo": {
+   "attempts": 0,
+   "note": "коротке: 69s",
+   "status": "skipped",
+   "ts": "2026-09-29T01:54:48+00:00"
   },
   "9JFGohx4E7U": {
    "attempts": 0,
@@ -285,6 +291,12 @@
    "note": "коротке: 992s",
    "status": "skipped",
    "ts": "2026-09-24T17:07:32+00:00"
+  },
+  "JEUboZzZGM4": {
+   "attempts": 1,
+   "note": "RemoteProtocolError: Server disconnected without sending a response.",
+   "status": "failed",
+   "ts": "2026-09-29T01:59:43+00:00"
   },
   "JtomF4bGxHs": {
    "attempts": 0,
@@ -519,6 +531,12 @@
    "note": "коротке: 47s",
    "status": "skipped",
    "ts": "2026-09-26T21:07:06+00:00"
+  },
+  "aNWKngrCrw4": {
+   "attempts": 0,
+   "note": "коротке: 111s",
+   "status": "skipped",
+   "ts": "2026-09-29T01:54:48+00:00"
   },
   "aSch4W4-aLM": {
    "attempts": 0,
