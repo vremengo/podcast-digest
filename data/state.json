@@ -13,7 +13,7 @@
   "@tkppodcast": "UCLtTf_uKt0Itd0NG7txrwXA",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 6,
  "gemini_day": "2026-09-29",
  "videos": {
   "-OIQs3xe9-I": {
@@ -294,9 +294,9 @@
   },
   "JEUboZzZGM4": {
    "attempts": 1,
-   "note": "RemoteProtocolError: Server disconnected without sending a response.",
-   "status": "failed",
-   "ts": "2026-09-29T01:59:43+00:00"
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-29T08:31:13+00:00"
   },
   "JtomF4bGxHs": {
    "attempts": 0,
