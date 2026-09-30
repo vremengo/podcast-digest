@@ -14,7 +14,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 9,
+ "gemini_calls_today": 34,
  "gemini_day": "2026-09-30",
  "videos": {
   "-OIQs3xe9-I": {
@@ -53,11 +53,23 @@
    "status": "skipped",
    "ts": "2026-09-27T00:33:50+00:00"
   },
+  "1gaJIf_0qbQ": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-09-30T16:24:11+00:00"
+  },
   "1qODNxcy4cg": {
    "attempts": 0,
    "note": "коротке: 299s",
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
+  },
+  "21RFTXdWSGA": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-30T16:27:27+00:00"
   },
   "2LRIAfng7eA": {
    "attempts": 0,
@@ -383,6 +395,12 @@
    "status": "skipped",
    "ts": "2026-09-25T00:32:35+00:00"
   },
+  "MDEQqcyuYVA": {
+   "attempts": 0,
+   "note": "коротке: 42s",
+   "status": "skipped",
+   "ts": "2026-09-30T16:24:11+00:00"
+  },
   "MwHp-sU0lso": {
    "attempts": 0,
    "note": "коротке: 180s",
@@ -503,11 +521,23 @@
    "status": "failed",
    "ts": "2026-09-29T16:39:08+00:00"
   },
+  "TkAUoahM950": {
+   "attempts": 0,
+   "note": "коротке: 77s",
+   "status": "skipped",
+   "ts": "2026-09-30T16:24:11+00:00"
+  },
   "Txew7m3rnWw": {
    "attempts": 0,
    "note": "коротке: 58s",
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
+  },
+  "UOcHfR3_tys": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-30T16:46:12+00:00"
   },
   "UhzI1fg8rCA": {
    "attempts": 1,
@@ -568,6 +598,12 @@
    "note": "коротке: 1026s",
    "status": "skipped",
    "ts": "2026-09-26T16:20:36+00:00"
+  },
+  "Y_RevX5yMq8": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-09-30T16:38:04+00:00"
   },
   "YuOSyRj3sXg": {
    "attempts": 0,
@@ -850,6 +886,12 @@
    "note": "коротке: 1179s",
    "status": "skipped",
    "ts": "2026-09-26T21:07:06+00:00"
+  },
+  "p7sxq-rWYSw": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-09-30T16:24:11+00:00"
   },
   "qACa-auyy2c": {
    "attempts": 0,
