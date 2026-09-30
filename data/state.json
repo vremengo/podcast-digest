@@ -14,7 +14,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 9,
  "gemini_day": "2026-09-30",
  "videos": {
   "-OIQs3xe9-I": {
@@ -53,6 +53,12 @@
    "status": "skipped",
    "ts": "2026-09-27T00:33:50+00:00"
   },
+  "1qODNxcy4cg": {
+   "attempts": 0,
+   "note": "коротке: 299s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
+  },
   "2LRIAfng7eA": {
    "attempts": 0,
    "note": "коротке: 1180s",
@@ -71,6 +77,24 @@
    "status": "skipped",
    "ts": "2026-09-29T16:29:59+00:00"
   },
+  "3T5sij3spWw": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-30T08:39:17+00:00"
+  },
+  "3iqL7JhK0eg": {
+   "attempts": 0,
+   "note": "коротке: 26s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
+  },
+  "3rhlkeFkDCI": {
+   "attempts": 0,
+   "note": "коротке: 50s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
+  },
   "4Gqg0HVe-AY": {
    "attempts": 1,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -82,6 +106,12 @@
    "note": "коротке: 142s",
    "status": "skipped",
    "ts": "2026-09-27T13:55:40+00:00"
+  },
+  "55bbsV15Gmc": {
+   "attempts": 0,
+   "note": "коротке: 51s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
   },
   "5_ZkERt5siI": {
    "attempts": 0,
@@ -209,6 +239,12 @@
    "status": "skipped",
    "ts": "2026-09-26T21:07:06+00:00"
   },
+  "Cpq8y5HpcF4": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-30T08:37:38+00:00"
+  },
   "D5FZNQ-vqw8": {
    "attempts": 0,
    "note": "коротке: 106s",
@@ -226,6 +262,12 @@
    "note": "коротке: 11s",
    "status": "skipped",
    "ts": "2026-09-29T16:29:59+00:00"
+  },
+  "Fn0SUMKb5JI": {
+   "attempts": 0,
+   "note": "коротке: 38s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
   },
   "Fp4a4CaI-74": {
    "attempts": 0,
@@ -413,6 +455,12 @@
    "status": "skipped",
    "ts": "2026-09-23T13:37:05+00:00"
   },
+  "RuljTkBBreM": {
+   "attempts": 0,
+   "note": "коротке: 60s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
+  },
   "SDbRJXQrYGY": {
    "attempts": 1,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -455,6 +503,12 @@
    "status": "failed",
    "ts": "2026-09-29T16:39:08+00:00"
   },
+  "Txew7m3rnWw": {
+   "attempts": 0,
+   "note": "коротке: 58s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
+  },
   "UhzI1fg8rCA": {
    "attempts": 1,
    "note": "gemini-3.6-flash; 1/1 msg",
@@ -490,6 +544,12 @@
    "note": "коротке: 45s",
    "status": "skipped",
    "ts": "2026-09-22T21:16:08+00:00"
+  },
+  "WCwJKCIzCPk": {
+   "attempts": 0,
+   "note": "коротке: 40s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
   },
   "WPzWY7NzGTg": {
    "attempts": 0,
@@ -527,6 +587,12 @@
    "status": "posted",
    "ts": "2026-09-20T16:02:51+00:00"
   },
+  "ZT4mpjx0JnE": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-30T08:36:32+00:00"
+  },
   "ZZcE0HeO-Hc": {
    "attempts": 0,
    "note": "коротке: 1242s",
@@ -538,6 +604,12 @@
    "note": "коротке: 47s",
    "status": "skipped",
    "ts": "2026-09-26T21:07:06+00:00"
+  },
+  "_weudOgj6qQ": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
   },
   "aNWKngrCrw4": {
    "attempts": 0,
@@ -563,6 +635,12 @@
    "status": "posted",
    "ts": "2026-09-21T12:45:45+00:00"
   },
+  "ajSWbDfOPDM": {
+   "attempts": 0,
+   "note": "коротке: 63s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
+  },
   "c82RCWeQT00": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -580,6 +658,12 @@
    "note": "коротке: 1154s",
    "status": "skipped",
    "ts": "2026-09-23T18:23:17+00:00"
+  },
+  "dxHyn4yi-gc": {
+   "attempts": 0,
+   "note": "коротке: 207s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
   },
   "e7s7jRgHWsg": {
    "attempts": 0,
@@ -707,6 +791,12 @@
    "status": "skipped",
    "ts": "2026-09-25T18:34:11+00:00"
   },
+  "lKuxDRWvmoc": {
+   "attempts": 0,
+   "note": "коротке: 20s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
+  },
   "la5zN0-pi_k": {
    "attempts": 0,
    "note": "коротке: 79s",
@@ -826,6 +916,12 @@
    "note": "коротке: 1287s",
    "status": "skipped",
    "ts": "2026-09-26T21:07:06+00:00"
+  },
+  "xsYoSwrcNOY": {
+   "attempts": 0,
+   "note": "коротке: 58s",
+   "status": "skipped",
+   "ts": "2026-09-30T08:30:21+00:00"
   },
   "yAsrMA_ADPc": {
    "attempts": 0,
