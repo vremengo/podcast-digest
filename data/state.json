@@ -14,7 +14,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 34,
+ "gemini_calls_today": 43,
  "gemini_day": "2026-09-30",
  "videos": {
   "-OIQs3xe9-I": {
@@ -131,6 +131,12 @@
    "status": "skipped",
    "ts": "2026-09-23T00:29:33+00:00"
   },
+  "5uHytmNAAFQ": {
+   "attempts": 0,
+   "note": "коротке: 57s",
+   "status": "skipped",
+   "ts": "2026-09-30T22:12:51+00:00"
+  },
   "64jq-3jziYM": {
    "attempts": 0,
    "note": "коротке: 72s",
@@ -239,6 +245,18 @@
    "status": "skipped",
    "ts": "2026-09-23T18:23:17+00:00"
   },
+  "B9OSbJLNAso": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-09-30T22:12:51+00:00"
+  },
+  "BAILrDM2wUI": {
+   "attempts": 0,
+   "note": "коротке: 14s",
+   "status": "skipped",
+   "ts": "2026-09-30T22:12:51+00:00"
+  },
   "CGq9KRSb9Kc": {
    "attempts": 2,
    "note": "gemini-3.6-flash; 1/1 msg",
@@ -298,6 +316,12 @@
    "note": "коротке: 82s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "FyteQQcZk5k": {
+   "attempts": 0,
+   "note": "коротке: 148s",
+   "status": "skipped",
+   "ts": "2026-09-30T22:12:51+00:00"
   },
   "GhU9yBxMR1U": {
    "attempts": 0,
@@ -394,6 +418,12 @@
    "note": "коротке: 113s",
    "status": "skipped",
    "ts": "2026-09-25T00:32:35+00:00"
+  },
+  "L0l6A-Qgbrc": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-30T22:25:10+00:00"
   },
   "MDEQqcyuYVA": {
    "attempts": 0,
@@ -587,6 +617,12 @@
    "status": "skipped",
    "ts": "2026-09-29T16:29:59+00:00"
   },
+  "WxMhRZn_zOQ": {
+   "attempts": 0,
+   "note": "коротке: 322s",
+   "status": "skipped",
+   "ts": "2026-09-30T22:12:51+00:00"
+  },
   "XgqKqN_H-4M": {
    "attempts": 0,
    "note": "коротке: 31s",
@@ -601,9 +637,9 @@
   },
   "Y_RevX5yMq8": {
    "attempts": 1,
-   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
-   "status": "failed",
-   "ts": "2026-09-30T16:38:04+00:00"
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-09-30T22:17:51+00:00"
   },
   "YuOSyRj3sXg": {
    "attempts": 0,
@@ -640,6 +676,12 @@
    "note": "коротке: 47s",
    "status": "skipped",
    "ts": "2026-09-26T21:07:06+00:00"
+  },
+  "_mi3alkqy4s": {
+   "attempts": 1,
+   "note": "RemoteProtocolError: Server disconnected without sending a response.",
+   "status": "failed",
+   "ts": "2026-09-30T22:24:48+00:00"
   },
   "_weudOgj6qQ": {
    "attempts": 0,
@@ -766,6 +808,12 @@
    "note": "коротке: 144s",
    "status": "skipped",
    "ts": "2026-09-24T21:28:56+00:00"
+  },
+  "itV8JS7Fp7M": {
+   "attempts": 0,
+   "note": "коротке: 23s",
+   "status": "skipped",
+   "ts": "2026-09-30T22:12:51+00:00"
   },
   "j7Ee8hMme3c": {
    "attempts": 0,
@@ -988,6 +1036,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-19T12:29:20+00:00"
+  },
+  "z66-eEpp3NU": {
+   "attempts": 0,
+   "note": "коротке: 178s",
+   "status": "skipped",
+   "ts": "2026-09-30T22:12:51+00:00"
   },
   "ztlXKfPCT3Q": {
    "attempts": 0,
