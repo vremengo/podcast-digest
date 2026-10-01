@@ -14,7 +14,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 7,
+ "gemini_calls_today": 24,
  "gemini_day": "2026-10-01",
  "videos": {
   "-OIQs3xe9-I": {
@@ -125,6 +125,12 @@
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
   },
+  "5OmvsH4jrdM": {
+   "attempts": 0,
+   "note": "коротке: 113s",
+   "status": "skipped",
+   "ts": "2026-10-01T17:01:19+00:00"
+  },
   "5_ZkERt5siI": {
    "attempts": 0,
    "note": "коротке: 103s",
@@ -172,6 +178,12 @@
    "note": "коротке: 376s",
    "status": "skipped",
    "ts": "2026-09-29T16:29:59+00:00"
+  },
+  "7DtkrTrTfF0": {
+   "attempts": 0,
+   "note": "коротке: 109s",
+   "status": "skipped",
+   "ts": "2026-10-01T17:01:19+00:00"
   },
   "7a6BfbZiDV4": {
    "attempts": 0,
@@ -226,6 +238,12 @@
    "note": "gemini-3.7-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-01T01:19:24+00:00"
+  },
+  "9o6rYks-OmE": {
+   "attempts": 0,
+   "note": "коротке: 33s",
+   "status": "skipped",
+   "ts": "2026-10-01T17:01:19+00:00"
   },
   "A2nb4ITBuZM": {
    "attempts": 0,
@@ -527,11 +545,23 @@
    "status": "posted",
    "ts": "2026-09-19T12:29:04+00:00"
   },
+  "SPEtDJatlF0": {
+   "attempts": 0,
+   "note": "коротке: 48s",
+   "status": "skipped",
+   "ts": "2026-10-01T17:01:19+00:00"
+  },
   "SQMCtZX3trg": {
    "attempts": 0,
    "note": "gemini-3.6-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-23T13:42:52+00:00"
+  },
+  "Se8jHLliLXE": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-10-01T17:10:33+00:00"
   },
   "Sjfz1TqxzEs": {
    "attempts": 0,
@@ -701,6 +731,12 @@
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
   },
+  "a4wrmRXyxlE": {
+   "attempts": 0,
+   "note": "коротке: 507s",
+   "status": "skipped",
+   "ts": "2026-10-01T17:01:19+00:00"
+  },
   "aNWKngrCrw4": {
    "attempts": 0,
    "note": "коротке: 111s",
@@ -796,6 +832,12 @@
    "note": "DigestError: Не вдалося отримати дайджест: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'The input token count exceeds the maximum number of tokens allowed 1048576.', 'status': 'INVALID_AR",
    "status": "failed",
    "ts": "2026-09-25T07:48:24+00:00"
+  },
+  "h1saDAxmoy4": {
+   "attempts": 1,
+   "note": "RemoteProtocolError: Server disconnected without sending a response.",
+   "status": "failed",
+   "ts": "2026-10-01T17:29:19+00:00"
   },
   "hIzX6r3IQbg": {
    "attempts": 0,
@@ -911,6 +953,12 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "lr3hNhA0IfQ": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-01T17:13:59+00:00"
+  },
   "mSLCn4X9D4U": {
    "attempts": 0,
    "note": "коротке: 167s",
@@ -946,6 +994,12 @@
    "note": "коротке: 71s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "nqXNLRH23oU": {
+   "attempts": 0,
+   "note": "коротке: 447s",
+   "status": "skipped",
+   "ts": "2026-10-01T17:01:19+00:00"
   },
   "oVsEddfhdxc": {
    "attempts": 0,
