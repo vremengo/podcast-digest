@@ -14,8 +14,8 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 43,
- "gemini_day": "2026-09-30",
+ "gemini_calls_today": 7,
+ "gemini_day": "2026-10-01",
  "videos": {
   "-OIQs3xe9-I": {
    "attempts": 0,
@@ -221,6 +221,12 @@
    "status": "skipped",
    "ts": "2026-09-22T11:34:02+00:00"
   },
+  "9cJrbj23fOA": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-01T01:19:24+00:00"
+  },
   "A2nb4ITBuZM": {
    "attempts": 0,
    "note": "коротке: 168s",
@@ -340,6 +346,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-19T17:19:26+00:00"
+  },
+  "HMiEuoHlwoE": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-01T01:20:11+00:00"
   },
   "HUo9lj1NUQ4": {
    "attempts": 0,
@@ -679,9 +691,9 @@
   },
   "_mi3alkqy4s": {
    "attempts": 1,
-   "note": "RemoteProtocolError: Server disconnected without sending a response.",
-   "status": "failed",
-   "ts": "2026-09-30T22:24:48+00:00"
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-01T01:17:42+00:00"
   },
   "_weudOgj6qQ": {
    "attempts": 0,
@@ -838,6 +850,12 @@
    "note": "коротке: 1163s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "jSkAV5f9Ptw": {
+   "attempts": 0,
+   "note": "коротке: 62s",
+   "status": "skipped",
+   "ts": "2026-10-01T01:17:07+00:00"
   },
   "jVyTt6eo1f8": {
    "attempts": 0,
