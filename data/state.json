@@ -14,7 +14,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 18,
+ "gemini_calls_today": 30,
  "gemini_day": "2026-10-02",
  "videos": {
   "-OIQs3xe9-I": {
@@ -35,6 +35,12 @@
    "status": "posted",
    "ts": "2026-09-25T18:34:54+00:00"
   },
+  "01kYGMwlt6Q": {
+   "attempts": 0,
+   "note": "коротке: 48s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
+  },
   "0I07YAuF8xA": {
    "attempts": 0,
    "note": "коротке: 1349s",
@@ -46,6 +52,12 @@
    "note": "коротке: 92s",
    "status": "skipped",
    "ts": "2026-09-18T20:52:37+00:00"
+  },
+  "1a5HxU52vCQ": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-02T23:47:23+00:00"
   },
   "1fqXz8NOMuY": {
    "attempts": 0,
@@ -172,6 +184,12 @@
    "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
    "status": "failed",
    "ts": "2026-09-29T15:12:12+00:00"
+  },
+  "6kxe_UC8Z34": {
+   "attempts": 0,
+   "note": "коротке: 538s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
   },
   "6lhApDfz5DM": {
    "attempts": 0,
@@ -353,6 +371,12 @@
    "status": "skipped",
    "ts": "2026-10-02T19:17:03+00:00"
   },
+  "EJYl3h7LdEM": {
+   "attempts": 0,
+   "note": "коротке: 296s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
+  },
   "FDdegeH32KU": {
    "attempts": 0,
    "note": "коротке: 11s",
@@ -412,6 +436,12 @@
    "note": "коротке: 39s",
    "status": "skipped",
    "ts": "2026-10-01T22:39:03+00:00"
+  },
+  "HLTa7Vcs4X0": {
+   "attempts": 0,
+   "note": "коротке: 675s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
   },
   "HMiEuoHlwoE": {
    "attempts": 0,
@@ -514,6 +544,18 @@
    "note": "gemini-3.7-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-30T22:25:10+00:00"
+  },
+  "LLjyvTpe7gY": {
+   "attempts": 0,
+   "note": "коротке: 45s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
+  },
+  "Lk_0TviLhnw": {
+   "attempts": 0,
+   "note": "коротке: 121s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
   },
   "LwQQ7nBCGSs": {
    "attempts": 0,
@@ -731,6 +773,12 @@
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
   },
+  "WHl_SZTkSO0": {
+   "attempts": 0,
+   "note": "коротке: 37s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
+  },
   "WPzWY7NzGTg": {
    "attempts": 0,
    "note": "коротке: 663s",
@@ -791,6 +839,12 @@
    "status": "skipped",
    "ts": "2026-09-23T18:23:17+00:00"
   },
+  "_LtmPJJiRiw": {
+   "attempts": 0,
+   "note": "коротке: 456s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
+  },
   "_Wn0CUjFZWQ": {
    "attempts": 0,
    "note": "коротке: 47s",
@@ -844,6 +898,12 @@
    "note": "коротке: 63s",
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
+  },
+  "apyrzaWj0Z4": {
+   "attempts": 0,
+   "note": "gemini-3.5-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-02T23:58:54+00:00"
   },
   "b8e19v7czQo": {
    "attempts": 0,
@@ -1145,6 +1205,12 @@
    "status": "skipped",
    "ts": "2026-09-30T16:24:11+00:00"
   },
+  "pAnLpiAG6Es": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-02T23:59:16+00:00"
+  },
   "qACa-auyy2c": {
    "attempts": 0,
    "note": "коротке: 179s",
@@ -1162,6 +1228,12 @@
    "note": "коротке: 43s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "rerszg9Ke9s": {
+   "attempts": 0,
+   "note": "коротке: 10s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
   },
   "s21Y5I6a-q4": {
    "attempts": 0,
@@ -1276,6 +1348,12 @@
    "note": "коротке: 178s",
    "status": "skipped",
    "ts": "2026-09-30T22:12:51+00:00"
+  },
+  "zZfCAntrqUg": {
+   "attempts": 0,
+   "note": "коротке: 14s",
+   "status": "skipped",
+   "ts": "2026-10-02T23:45:42+00:00"
   },
   "ztlXKfPCT3Q": {
    "attempts": 0,
