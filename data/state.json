@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 10,
+ "gemini_calls_today": 17,
  "gemini_day": "2026-10-04",
  "videos": {
   "-OIQs3xe9-I": {
@@ -269,6 +269,12 @@
    "note": "коротке: 110s",
    "status": "skipped",
    "ts": "2026-09-19T20:36:53+00:00"
+  },
+  "8aVbXXvJUY4": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-04T18:09:18+00:00"
   },
   "8xCKWAiwNvU": {
    "attempts": 0,
@@ -774,6 +780,12 @@
    "status": "posted",
    "ts": "2026-09-26T16:21:03+00:00"
   },
+  "TRe1u7dHYiA": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-04T18:13:52+00:00"
+  },
   "TRfzFJCJ7ZE": {
    "attempts": 1,
    "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
@@ -1002,6 +1014,12 @@
    "status": "skipped",
    "ts": "2026-10-01T22:39:03+00:00"
   },
+  "bRGyYaE0lxI": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-04T18:10:51+00:00"
+  },
   "bmDrbHOh7Bo": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -1013,6 +1031,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-26T11:21:39+00:00"
+  },
+  "cK13l1gYyDc": {
+   "attempts": 0,
+   "note": "коротке: 67s",
+   "status": "skipped",
+   "ts": "2026-10-04T18:08:46+00:00"
   },
   "cKhpeEBnT1o": {
    "attempts": 0,
