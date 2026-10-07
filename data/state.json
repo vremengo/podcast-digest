@@ -270,6 +270,12 @@
    "status": "skipped",
    "ts": "2026-09-17T21:19:34+00:00"
   },
+  "7rk18oEEqzc": {
+   "attempts": 0,
+   "note": "коротке: 85s",
+   "status": "skipped",
+   "ts": "2026-10-07T13:17:16+00:00"
+  },
   "7taOQBfjDyE": {
    "attempts": 0,
    "note": "коротке: 1124s",
@@ -1026,6 +1032,12 @@
    "status": "skipped",
    "ts": "2026-09-26T16:20:36+00:00"
   },
+  "Y3P7Kno8D6o": {
+   "attempts": 0,
+   "note": "коротке: 397s",
+   "status": "skipped",
+   "ts": "2026-10-07T13:17:16+00:00"
+  },
   "YXb2Wx1r_Pk": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -1314,6 +1326,12 @@
    "status": "skipped",
    "ts": "2026-09-24T17:07:32+00:00"
   },
+  "fdRD8V24dZw": {
+   "attempts": 0,
+   "note": "коротке: 100s",
+   "status": "skipped",
+   "ts": "2026-10-07T13:17:16+00:00"
+  },
   "fg5fgK-vhuU": {
    "attempts": 0,
    "note": "коротке: 11s",
@@ -1331,6 +1349,12 @@
    "note": "DigestError: Не вдалося отримати дайджест: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'The input token count exceeds the maximum number of tokens allowed 1048576.', 'status': 'INVALID_AR",
    "status": "failed",
    "ts": "2026-09-25T07:48:24+00:00"
+  },
+  "g8i1G8E9WVg": {
+   "attempts": 0,
+   "note": "коротке: 69s",
+   "status": "skipped",
+   "ts": "2026-10-07T13:17:16+00:00"
   },
   "h1saDAxmoy4": {
    "attempts": 1,
