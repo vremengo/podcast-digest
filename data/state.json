@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 19,
+ "gemini_calls_today": 48,
  "gemini_day": "2026-10-14",
  "videos": {
   "-AX45InwE94": {
@@ -408,6 +408,12 @@
    "status": "skipped",
    "ts": "2026-09-29T01:54:48+00:00"
   },
+  "94VfaZEYYW8": {
+   "attempts": 0,
+   "note": "коротке: 89s",
+   "status": "skipped",
+   "ts": "2026-10-14T13:40:55+00:00"
+  },
   "9JFGohx4E7U": {
    "attempts": 1,
    "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
@@ -653,6 +659,12 @@
    "note": "коротке: 60s",
    "status": "skipped",
    "ts": "2026-10-09T16:58:43+00:00"
+  },
+  "Fa3hQVIKShw": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-10-14T13:55:00+00:00"
   },
   "Fe4aSMXsOZ4": {
    "attempts": 0,
@@ -959,6 +971,12 @@
    "note": "коротке: 23s",
    "status": "skipped",
    "ts": "2026-09-23T22:56:09+00:00"
+  },
+  "NDtqfHOe6dU": {
+   "attempts": 0,
+   "note": "коротке: 170s",
+   "status": "skipped",
+   "ts": "2026-10-14T13:40:55+00:00"
   },
   "NSzKc1TRJlo": {
    "attempts": 0,
@@ -1362,6 +1380,12 @@
    "status": "skipped",
    "ts": "2026-09-29T16:29:59+00:00"
   },
+  "WhfmN1seZqg": {
+   "attempts": 0,
+   "note": "коротке: 40s",
+   "status": "skipped",
+   "ts": "2026-10-14T13:40:55+00:00"
+  },
   "WxMhRZn_zOQ": {
    "attempts": 0,
    "note": "коротке: 322s",
@@ -1505,6 +1529,12 @@
    "note": "коротке: 1242s",
    "status": "skipped",
    "ts": "2026-09-23T18:23:17+00:00"
+  },
+  "ZccJsdOE54M": {
+   "attempts": 0,
+   "note": "коротке: 602s",
+   "status": "skipped",
+   "ts": "2026-10-14T13:40:55+00:00"
   },
   "Zn-RepmEVJ8": {
    "attempts": 1,
@@ -1751,6 +1781,12 @@
    "note": "коротке: 13s",
    "status": "skipped",
    "ts": "2026-10-02T19:17:03+00:00"
+  },
+  "dgCMdjWTOMw": {
+   "attempts": 0,
+   "note": "коротке: 73s",
+   "status": "skipped",
+   "ts": "2026-10-14T13:40:55+00:00"
   },
   "dxHyn4yi-gc": {
    "attempts": 0,
@@ -2262,6 +2298,12 @@
    "status": "posted",
    "ts": "2026-10-09T22:38:19+00:00"
   },
+  "oixzVKMAXG0": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-14T13:45:38+00:00"
+  },
   "p7sxq-rWYSw": {
    "attempts": 0,
    "note": "коротке: 11s",
@@ -2514,6 +2556,12 @@
    "status": "skipped",
    "ts": "2026-10-14T07:34:28+00:00"
   },
+  "wXj-m-0WHrk": {
+   "attempts": 0,
+   "note": "коротке: 139s",
+   "status": "skipped",
+   "ts": "2026-10-14T13:40:55+00:00"
+  },
   "wfPQ4Smzme0": {
    "attempts": 0,
    "note": "gemini-3.7-flash; 1/1 msg",
@@ -2615,6 +2663,12 @@
    "note": "коротке: 16s",
    "status": "skipped",
    "ts": "2026-09-23T22:56:09+00:00"
+  },
+  "yZR8QW4qQmM": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-10-14T14:05:32+00:00"
   },
   "yslXlV2BP_Y": {
    "attempts": 1,
