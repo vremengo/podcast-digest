@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 48,
+ "gemini_calls_today": 58,
  "gemini_day": "2026-10-14",
  "videos": {
   "-AX45InwE94": {
@@ -395,6 +395,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-04T18:09:18+00:00"
+  },
+  "8g1N_a3h9H0": {
+   "attempts": 0,
+   "note": "коротке: 672s",
+   "status": "skipped",
+   "ts": "2026-10-14T18:35:31+00:00"
   },
   "8xCKWAiwNvU": {
    "attempts": 0,
@@ -846,6 +852,12 @@
    "status": "skipped",
    "ts": "2026-10-05T19:27:06+00:00"
   },
+  "J-sMqnzHwI0": {
+   "attempts": 0,
+   "note": "коротке: 427s",
+   "status": "skipped",
+   "ts": "2026-10-14T18:35:31+00:00"
+  },
   "JDLlJM3J2zg": {
    "attempts": 0,
    "note": "коротке: 40s",
@@ -971,6 +983,12 @@
    "note": "коротке: 23s",
    "status": "skipped",
    "ts": "2026-09-23T22:56:09+00:00"
+  },
+  "N58CCnPqNoo": {
+   "attempts": 0,
+   "note": "коротке: 66s",
+   "status": "skipped",
+   "ts": "2026-10-14T18:35:31+00:00"
   },
   "NDtqfHOe6dU": {
    "attempts": 0,
@@ -1974,6 +1992,12 @@
    "status": "skipped",
    "ts": "2026-10-13T15:55:46+00:00"
   },
+  "hDuDwAG1_NM": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-10-14T18:35:31+00:00"
+  },
   "hIzX6r3IQbg": {
    "attempts": 0,
    "note": "коротке: 144s",
@@ -2135,6 +2159,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-12T15:18:47+00:00"
+  },
+  "kP-mJn87Kwo": {
+   "attempts": 0,
+   "note": "коротке: 37s",
+   "status": "skipped",
+   "ts": "2026-10-14T18:35:31+00:00"
   },
   "kQSNZGtpG-g": {
    "attempts": 0,
@@ -2544,6 +2574,12 @@
    "status": "skipped",
    "ts": "2026-09-26T16:20:36+00:00"
   },
+  "vv_QuImaBME": {
+   "attempts": 0,
+   "note": "коротке: 263s",
+   "status": "skipped",
+   "ts": "2026-10-14T18:35:31+00:00"
+  },
   "vwIj7vU1MHA": {
    "attempts": 0,
    "note": "коротке: 107s",
@@ -2633,6 +2669,12 @@
    "note": "коротке: 10s",
    "status": "skipped",
    "ts": "2026-10-09T00:20:56+00:00"
+  },
+  "xr7tUPuc7xA": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information",
+   "status": "failed",
+   "ts": "2026-10-14T18:43:42+00:00"
   },
   "xsYoSwrcNOY": {
    "attempts": 0,
