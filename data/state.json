@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 9,
+ "gemini_calls_today": 12,
  "gemini_day": "2026-10-17",
  "videos": {
   "-AX45InwE94": {
@@ -263,6 +263,12 @@
    "note": "коротке: 50s",
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
+  },
+  "4-vJ2OJREpM": {
+   "attempts": 0,
+   "note": "коротке: 53s",
+   "status": "skipped",
+   "ts": "2026-10-17T15:30:05+00:00"
   },
   "42Bz0TUfeOQ": {
    "attempts": 0,
@@ -623,6 +629,12 @@
    "note": "коротке: 87s",
    "status": "skipped",
    "ts": "2026-10-10T12:26:45+00:00"
+  },
+  "Bc5gRmNGOtc": {
+   "attempts": 0,
+   "note": "коротке: 42s",
+   "status": "skipped",
+   "ts": "2026-10-17T15:30:05+00:00"
   },
   "Bdrs3uAX0_M": {
    "attempts": 0,
@@ -1092,6 +1104,12 @@
    "status": "skipped",
    "ts": "2026-10-15T11:23:22+00:00"
   },
+  "KtBivPzmOM8": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-17T15:31:35+00:00"
+  },
   "KzJTif9YnBo": {
    "attempts": 0,
    "note": "коротке: 121s",
@@ -1493,6 +1511,12 @@
    "note": "gemini-3.5-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-08T13:36:22+00:00"
+  },
+  "Ti-BmGU1_mQ": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-17T15:32:02+00:00"
   },
   "TkAUoahM950": {
    "attempts": 0,
@@ -2130,6 +2154,12 @@
    "status": "posted",
    "ts": "2026-09-23T22:56:30+00:00"
   },
+  "e9-br9hveRI": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-17T15:33:13+00:00"
+  },
   "e9Jyq1kbcl0": {
    "attempts": 0,
    "note": "коротке: 22s",
@@ -2735,6 +2765,12 @@
    "note": "коротке: 44s",
    "status": "skipped",
    "ts": "2026-10-09T16:58:43+00:00"
+  },
+  "plyGf--nVTk": {
+   "attempts": 0,
+   "note": "коротке: 54s",
+   "status": "skipped",
+   "ts": "2026-10-17T15:30:05+00:00"
   },
   "pyvRID_CZZU": {
    "attempts": 2,
