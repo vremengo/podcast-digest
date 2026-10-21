@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 40,
+ "gemini_calls_today": 49,
  "gemini_day": "2026-10-21",
  "videos": {
   "-AOxpwVeIWw": {
@@ -359,6 +359,12 @@
    "note": "коротке: 142s",
    "status": "skipped",
    "ts": "2026-09-27T13:55:40+00:00"
+  },
+  "4kpr4_jOmrY": {
+   "attempts": 0,
+   "note": "коротке: 41s",
+   "status": "skipped",
+   "ts": "2026-10-21T23:16:23+00:00"
   },
   "55bbsV15Gmc": {
    "attempts": 0,
@@ -812,9 +818,9 @@
   },
   "DouK81O8R3o": {
    "attempts": 1,
-   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
-   "status": "failed",
-   "ts": "2026-10-21T18:49:11+00:00"
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-21T23:17:48+00:00"
   },
   "Dp77pNj-9RU": {
    "attempts": 0,
@@ -2316,6 +2322,12 @@
    "status": "posted",
    "ts": "2026-09-21T12:45:45+00:00"
   },
+  "a_YnzSk_x9I": {
+   "attempts": 0,
+   "note": "коротке: 122s",
+   "status": "skipped",
+   "ts": "2026-10-21T23:16:23+00:00"
+  },
   "adfw3xJBx1o": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -2375,6 +2387,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-04T18:10:51+00:00"
+  },
+  "bU5gDVyu_28": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-21T23:19:14+00:00"
   },
   "bXbDsNxcjWA": {
    "attempts": 0,
@@ -3000,6 +3018,12 @@
    "status": "posted",
    "ts": "2026-10-11T19:03:55+00:00"
   },
+  "l4rXWe33TQQ": {
+   "attempts": 0,
+   "note": "коротке: 56s",
+   "status": "skipped",
+   "ts": "2026-10-21T23:16:23+00:00"
+  },
   "lIgdnF0s0kQ": {
    "attempts": 0,
    "note": "коротке: 1081s",
@@ -3113,6 +3137,12 @@
    "note": "коротке: 71s",
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
+  },
+  "nRl-7Yhmbog": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-21T23:19:40+00:00"
   },
   "nSkmXakJ6eo": {
    "attempts": 0,
