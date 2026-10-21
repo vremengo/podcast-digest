@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 8,
+ "gemini_calls_today": 19,
  "gemini_day": "2026-10-21",
  "videos": {
   "-AOxpwVeIWw": {
@@ -29,6 +29,12 @@
    "note": "gemini-3.6-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-06T17:05:59+00:00"
+  },
+  "-GwgqIDUeYs": {
+   "attempts": 0,
+   "note": "коротке: 123s",
+   "status": "skipped",
+   "ts": "2026-10-21T13:44:41+00:00"
   },
   "-OIQs3xe9-I": {
    "attempts": 0,
@@ -77,6 +83,12 @@
    "note": "коротке: 53s",
    "status": "skipped",
    "ts": "2026-10-13T15:55:46+00:00"
+  },
+  "0HQY4E32ado": {
+   "attempts": 0,
+   "note": "коротке: 63s",
+   "status": "skipped",
+   "ts": "2026-10-21T13:44:41+00:00"
   },
   "0I07YAuF8xA": {
    "attempts": 0,
@@ -269,6 +281,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-15T11:27:13+00:00"
+  },
+  "3axY1wz2OvA": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-21T13:47:18+00:00"
   },
   "3hloF_-qzyA": {
    "attempts": 0,
@@ -1014,6 +1032,12 @@
    "status": "posted",
    "ts": "2026-09-19T17:19:26+00:00"
   },
+  "H494EV_2g-A": {
+   "attempts": 0,
+   "note": "коротке: 49s",
+   "status": "skipped",
+   "ts": "2026-10-21T13:44:41+00:00"
+  },
   "HHwwur0-7qY": {
    "attempts": 0,
    "note": "коротке: 39s",
@@ -1488,6 +1512,12 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "PYkyTIZIz4M": {
+   "attempts": 0,
+   "note": "коротке: 59s",
+   "status": "skipped",
+   "ts": "2026-10-21T13:44:41+00:00"
+  },
   "PmJzhkZXr_M": {
    "attempts": 0,
    "note": "коротке: 27s",
@@ -1776,6 +1806,12 @@
    "status": "posted",
    "ts": "2026-10-21T00:40:34+00:00"
   },
+  "UN8CjCCjKDQ": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
+   "status": "failed",
+   "ts": "2026-10-21T13:44:43+00:00"
+  },
   "UOcHfR3_tys": {
    "attempts": 0,
    "note": "gemini-3.6-flash; 1/1 msg",
@@ -2039,6 +2075,12 @@
    "note": "gemini-3.6-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-23T13:50:17+00:00"
+  },
+  "YvQ4BVTWfHI": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-21T13:50:08+00:00"
   },
   "Z0YhLnyFr-E": {
    "attempts": 0,
