@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 14,
+ "gemini_calls_today": 33,
  "gemini_day": "2026-10-22",
  "videos": {
   "-AOxpwVeIWw": {
@@ -768,6 +768,12 @@
    "status": "skipped",
    "ts": "2026-10-06T22:38:22+00:00"
   },
+  "CFbnVpSsDFQ": {
+   "attempts": 0,
+   "note": "gemini-3.5-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-22T17:21:22+00:00"
+  },
   "CGq9KRSb9Kc": {
    "attempts": 2,
    "note": "gemini-3.6-flash; 1/1 msg",
@@ -863,6 +869,12 @@
    "note": "коротке: 29s",
    "status": "skipped",
    "ts": "2026-10-06T22:38:22+00:00"
+  },
+  "EI5pCxrSM7s": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 2/2 msg",
+   "status": "posted",
+   "ts": "2026-10-22T17:09:08+00:00"
   },
   "EJYl3h7LdEM": {
    "attempts": 0,
@@ -1145,6 +1157,12 @@
    "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
    "status": "failed",
    "ts": "2026-09-29T15:01:02+00:00"
+  },
+  "HwwYU7eDYrY": {
+   "attempts": 0,
+   "note": "коротке: 27s",
+   "status": "skipped",
+   "ts": "2026-10-22T17:07:09+00:00"
   },
   "HxYMDAbVNV0": {
    "attempts": 0,
@@ -1572,6 +1590,12 @@
    "status": "posted",
    "ts": "2026-10-16T13:24:24+00:00"
   },
+  "P5w6Ch3ACJ8": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-22T17:15:03+00:00"
+  },
   "PIKcJGTGMBk": {
    "attempts": 0,
    "note": "коротке: 63s",
@@ -1997,6 +2021,12 @@
    "note": "коротке: 37s",
    "status": "skipped",
    "ts": "2026-10-02T23:45:42+00:00"
+  },
+  "WPkEpvvDnE4": {
+   "attempts": 0,
+   "note": "коротке: 23s",
+   "status": "skipped",
+   "ts": "2026-10-22T17:07:09+00:00"
   },
   "WPzWY7NzGTg": {
    "attempts": 0,
@@ -2849,6 +2879,12 @@
    "note": "коротке: 11s",
    "status": "skipped",
    "ts": "2026-10-21T18:35:29+00:00"
+  },
+  "hsFAHpk63Es": {
+   "attempts": 0,
+   "note": "коротке: 38s",
+   "status": "skipped",
+   "ts": "2026-10-22T17:07:09+00:00"
   },
   "htFXw5Dw3Qk": {
    "attempts": 0,
