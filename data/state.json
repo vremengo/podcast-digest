@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 14,
+ "gemini_calls_today": 17,
  "gemini_day": "2026-10-24",
  "videos": {
   "-9XQMHhpypc": {
@@ -47,6 +47,12 @@
    "note": "коротке: 39s",
    "status": "skipped",
    "ts": "2026-09-18T16:21:58+00:00"
+  },
+  "-YMMRQ1qscI": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-24T22:29:26+00:00"
   },
   "-YjBgywbkpM": {
    "attempts": 0,
@@ -359,6 +365,12 @@
    "note": "коротке: 210s",
    "status": "skipped",
    "ts": "2026-10-13T15:55:46+00:00"
+  },
+  "4fsDNvYz6g8": {
+   "attempts": 0,
+   "note": "коротке: 92s",
+   "status": "skipped",
+   "ts": "2026-10-24T22:27:28+00:00"
   },
   "4hgvKzBxF38": {
    "attempts": 0,
@@ -1686,6 +1698,12 @@
    "status": "skipped",
    "ts": "2026-09-17T19:14:24+00:00"
   },
+  "PSbydooXDr8": {
+   "attempts": 0,
+   "note": "коротке: 38s",
+   "status": "skipped",
+   "ts": "2026-10-24T22:27:28+00:00"
+  },
   "PUcooQRy0PU": {
    "attempts": 0,
    "note": "коротке: 1652s",
@@ -2033,6 +2051,12 @@
    "note": "gemini-3.6-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-24T17:12:39+00:00"
+  },
+  "Uo297BJeNvQ": {
+   "attempts": 0,
+   "note": "коротке: 108s",
+   "status": "skipped",
+   "ts": "2026-10-24T22:27:28+00:00"
   },
   "Ut3LOjKNJaE": {
    "attempts": 0,
@@ -2970,6 +2994,12 @@
    "status": "skipped",
    "ts": "2026-10-13T15:55:46+00:00"
   },
+  "h7-2Pj_ouHc": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-24T22:33:47+00:00"
+  },
   "hDuDwAG1_NM": {
    "attempts": 0,
    "note": "коротке: 11s",
@@ -3515,6 +3545,12 @@
    "note": "коротке: 587s",
    "status": "skipped",
    "ts": "2026-10-23T23:07:15+00:00"
+  },
+  "opHmX7qClzE": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-24T22:32:21+00:00"
   },
   "p0tlM84dNSs": {
    "attempts": 0,
