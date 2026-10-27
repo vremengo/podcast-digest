@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 10,
+ "gemini_calls_today": 14,
  "gemini_day": "2026-10-27",
  "videos": {
   "-9XQMHhpypc": {
@@ -390,6 +390,12 @@
    "status": "posted",
    "ts": "2026-09-24T21:29:28+00:00"
   },
+  "4UtrRVtUN_g": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-27T22:18:40+00:00"
+  },
   "4Z8wYXGp32s": {
    "attempts": 0,
    "note": "коротке: 210s",
@@ -564,6 +570,12 @@
    "status": "skipped",
    "ts": "2026-09-29T16:29:59+00:00"
   },
+  "7C8AsOqM9_A": {
+   "attempts": 0,
+   "note": "коротке: 223s",
+   "status": "skipped",
+   "ts": "2026-10-27T22:10:02+00:00"
+  },
   "7DtkrTrTfF0": {
    "attempts": 0,
    "note": "коротке: 109s",
@@ -605,6 +617,12 @@
    "note": "коротке: 105s",
    "status": "skipped",
    "ts": "2026-09-17T21:19:34+00:00"
+  },
+  "7adYEc1XkEs": {
+   "attempts": 0,
+   "note": "коротке: 65s",
+   "status": "skipped",
+   "ts": "2026-10-27T22:10:02+00:00"
   },
   "7b9tov5Uc5s": {
    "attempts": 0,
@@ -2436,6 +2454,12 @@
    "status": "skipped",
    "ts": "2026-10-07T13:17:16+00:00"
   },
+  "YCvG7SXS4CE": {
+   "attempts": 0,
+   "note": "коротке: 211s",
+   "status": "skipped",
+   "ts": "2026-10-27T22:10:02+00:00"
+  },
   "YNT7Plf9KIg": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -2471,6 +2495,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-09T16:59:34+00:00"
+  },
+  "Y_p3y6zP5QE": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-27T22:17:40+00:00"
   },
   "YiFqcu9YA38": {
    "attempts": 0,
@@ -3206,9 +3236,9 @@
   },
   "gv4w23xYj-0": {
    "attempts": 1,
-   "note": "RemoteProtocolError: Server disconnected without sending a response.",
-   "status": "failed",
-   "ts": "2026-10-27T12:10:50+00:00"
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-27T22:16:02+00:00"
   },
   "h1saDAxmoy4": {
    "attempts": 1,
