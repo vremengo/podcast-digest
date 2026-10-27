@@ -282,6 +282,12 @@
    "status": "skipped",
    "ts": "2026-10-15T21:20:08+00:00"
   },
+  "3MiiB1VTvZA": {
+   "attempts": 0,
+   "note": "коротке: 59s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
+  },
   "3Q1mdn5ZGvM": {
    "attempts": 0,
    "note": "gemini-3.7-flash; 1/1 msg",
@@ -390,6 +396,12 @@
    "status": "skipped",
    "ts": "2026-10-13T15:55:46+00:00"
   },
+  "4c30GJb3Yek": {
+   "attempts": 0,
+   "note": "коротке: 626s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
+  },
   "4fsDNvYz6g8": {
    "attempts": 0,
    "note": "коротке: 92s",
@@ -443,6 +455,12 @@
    "note": "коротке: 103s",
    "status": "skipped",
    "ts": "2026-09-23T00:29:33+00:00"
+  },
+  "5dGHbM7frJQ": {
+   "attempts": 0,
+   "note": "коротке: 33s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
   },
   "5sorengsI0I": {
    "attempts": 0,
@@ -2952,6 +2970,12 @@
    "status": "skipped",
    "ts": "2026-10-08T19:55:43+00:00"
   },
+  "e5W-7cggAg0": {
+   "attempts": 0,
+   "note": "коротке: 34s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
+  },
   "e7s7jRgHWsg": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -3059,6 +3083,12 @@
    "note": "коротке: 199s",
    "status": "skipped",
    "ts": "2026-10-13T21:13:17+00:00"
+  },
+  "fOOPP4N87oI": {
+   "attempts": 0,
+   "note": "коротке: 30s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
   },
   "fSVn-0Hgt64": {
    "attempts": 0,
@@ -3269,6 +3299,12 @@
    "note": "коротке: 389s",
    "status": "skipped",
    "ts": "2026-10-08T19:55:43+00:00"
+  },
+  "hxGeryDClG4": {
+   "attempts": 0,
+   "note": "коротке: 41s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
   },
   "hzL9CLItdp8": {
    "attempts": 0,
@@ -4176,6 +4212,12 @@
    "status": "posted",
    "ts": "2026-10-26T23:55:01+00:00"
   },
+  "uflp-68nXAY": {
+   "attempts": 0,
+   "note": "коротке: 54s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
+  },
   "uuwDWRbxoYo": {
    "attempts": 0,
    "note": "коротке: 694s",
@@ -4265,6 +4307,12 @@
    "note": "коротке: 496s",
    "status": "skipped",
    "ts": "2026-10-14T07:34:28+00:00"
+  },
+  "wKXEbSRscWg": {
+   "attempts": 0,
+   "note": "коротке: 13s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
   },
   "wO4BLBzNEFs": {
    "attempts": 0,
@@ -4427,6 +4475,12 @@
    "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
    "status": "failed",
    "ts": "2026-10-14T14:05:32+00:00"
+  },
+  "ya6lNLDYSEQ": {
+   "attempts": 0,
+   "note": "коротке: 14s",
+   "status": "skipped",
+   "ts": "2026-10-27T17:58:06+00:00"
   },
   "yePLuwL3FbM": {
    "attempts": 0,
