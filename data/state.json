@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 14,
+ "gemini_calls_today": 20,
  "gemini_day": "2026-10-28",
  "videos": {
   "-9XQMHhpypc": {
@@ -198,6 +198,12 @@
    "status": "skipped",
    "ts": "2026-10-21T18:35:29+00:00"
   },
+  "2HahZLNzIAo": {
+   "attempts": 0,
+   "note": "коротке: 22s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
+  },
   "2LRIAfng7eA": {
    "attempts": 0,
    "note": "коротке: 1180s",
@@ -293,6 +299,12 @@
    "note": "коротке: 104s",
    "status": "skipped",
    "ts": "2026-10-15T21:20:08+00:00"
+  },
+  "3MF7fG5uB94": {
+   "attempts": 0,
+   "note": "коротке: 477s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
   },
   "3MiiB1VTvZA": {
    "attempts": 0,
@@ -1992,6 +2004,12 @@
    "status": "skipped",
    "ts": "2026-10-14T07:34:28+00:00"
   },
+  "R5FlMC_u-3Q": {
+   "attempts": 0,
+   "note": "коротке: 52s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
+  },
   "R8-arQaLJmg": {
    "attempts": 0,
    "note": "коротке: 402s",
@@ -2208,6 +2226,12 @@
    "status": "posted",
    "ts": "2026-10-15T17:00:41+00:00"
   },
+  "U95yrxQ_N3I": {
+   "attempts": 0,
+   "note": "коротке: 170s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
+  },
   "UB6hoWyh3B0": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -2387,6 +2411,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-15T21:21:38+00:00"
+  },
+  "Wh2_H2edtM4": {
+   "attempts": 0,
+   "note": "коротке: 332s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
   },
   "WhfmN1seZqg": {
    "attempts": 0,
@@ -3078,6 +3108,12 @@
    "status": "skipped",
    "ts": "2026-10-21T18:35:29+00:00"
   },
+  "eLh-KTuJ1u4": {
+   "attempts": 0,
+   "note": "коротке: 116s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
+  },
   "eMnyT7e1F_8": {
    "attempts": 0,
    "note": "коротке: 136s",
@@ -3095,6 +3131,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-08T19:56:37+00:00"
+  },
+  "eaKVEbAcOhg": {
+   "attempts": 0,
+   "note": "коротке: 26s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
   },
   "ekK8urKHPMQ": {
    "attempts": 0,
@@ -3222,6 +3264,12 @@
    "status": "failed",
    "ts": "2026-09-25T07:48:24+00:00"
   },
+  "g2wQSgfGOMU": {
+   "attempts": 0,
+   "note": "коротке: 16s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
+  },
   "g8i1G8E9WVg": {
    "attempts": 0,
    "note": "коротке: 69s",
@@ -3245,6 +3293,12 @@
    "note": "коротке: 156s",
    "status": "skipped",
    "ts": "2026-10-27T12:05:29+00:00"
+  },
+  "gafB6PuXmGk": {
+   "attempts": 0,
+   "note": "коротке: 22s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
   },
   "gndlhm3pSNI": {
    "attempts": 0,
@@ -3564,6 +3618,12 @@
    "status": "skipped",
    "ts": "2026-10-01T22:39:03+00:00"
   },
+  "k0a9UIGuxpY": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
+   "status": "failed",
+   "ts": "2026-10-28T22:33:05+00:00"
+  },
   "k11PYbX5kew": {
    "attempts": 0,
    "note": "коротке: 107s",
@@ -3647,6 +3707,12 @@
    "note": "коротке: 56s",
    "status": "skipped",
    "ts": "2026-10-21T23:16:23+00:00"
+  },
+  "lGDT3G7fcWs": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-28T22:33:57+00:00"
   },
   "lIgdnF0s0kQ": {
    "attempts": 0,
@@ -4422,6 +4488,12 @@
    "status": "skipped",
    "ts": "2026-10-14T13:40:55+00:00"
   },
+  "w_p-68aRdmc": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-28T22:33:02+00:00"
+  },
   "wfPQ4Smzme0": {
    "attempts": 0,
    "note": "gemini-3.7-flash; 1/1 msg",
@@ -4547,6 +4619,12 @@
    "note": "коротке: 1355s",
    "status": "skipped",
    "ts": "2026-09-21T23:15:36+00:00"
+  },
+  "yJ_PGOpy-gU": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-10-28T22:31:28+00:00"
   },
   "yLnJpR8H2kY": {
    "attempts": 0,
