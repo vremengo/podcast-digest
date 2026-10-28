@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 14,
  "gemini_day": "2026-10-28",
  "videos": {
   "-9XQMHhpypc": {
@@ -281,6 +281,12 @@
    "note": "коротке: 83s",
    "status": "skipped",
    "ts": "2026-10-27T12:05:29+00:00"
+  },
+  "3CDvfm9DYjw": {
+   "attempts": 0,
+   "note": "коротке: 69s",
+   "status": "skipped",
+   "ts": "2026-10-28T16:36:18+00:00"
   },
   "3ChIbhEeIBg": {
    "attempts": 0,
@@ -1314,6 +1320,12 @@
    "status": "skipped",
    "ts": "2026-10-01T22:39:03+00:00"
   },
+  "HKNpCwG3nlc": {
+   "attempts": 1,
+   "note": "RemoteProtocolError: Server disconnected without sending a response.",
+   "status": "failed",
+   "ts": "2026-10-28T16:43:39+00:00"
+  },
   "HLTa7Vcs4X0": {
    "attempts": 0,
    "note": "коротке: 675s",
@@ -1980,6 +1992,12 @@
    "status": "skipped",
    "ts": "2026-10-14T07:34:28+00:00"
   },
+  "R8-arQaLJmg": {
+   "attempts": 0,
+   "note": "коротке: 402s",
+   "status": "skipped",
+   "ts": "2026-10-28T16:36:18+00:00"
+  },
   "REsrgNeuZkU": {
    "attempts": 0,
    "note": "gemini-3.5-flash; 1/1 msg",
@@ -2201,6 +2219,12 @@
    "note": "gemini-3.7-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-19T20:06:11+00:00"
+  },
+  "UGuNt2_Oz8s": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-28T16:55:51+00:00"
   },
   "UHbODjuviAU": {
    "attempts": 0,
@@ -3324,6 +3348,12 @@
    "status": "skipped",
    "ts": "2026-10-16T00:22:25+00:00"
   },
+  "hlKr_b6EWag": {
+   "attempts": 0,
+   "note": "коротке: 499s",
+   "status": "skipped",
+   "ts": "2026-10-28T16:36:18+00:00"
+  },
   "hlgMjfHcZ_o": {
    "attempts": 0,
    "note": "коротке: 11s",
@@ -3581,6 +3611,12 @@
    "note": "коротке: 11s",
    "status": "skipped",
    "ts": "2026-10-05T19:27:06+00:00"
+  },
+  "kRJjSOYqW0I": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-28T16:50:02+00:00"
   },
   "kiClTcJUnhc": {
    "attempts": 0,
