@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 6,
+ "gemini_calls_today": 7,
  "gemini_day": "2026-10-29",
  "videos": {
   "-9XQMHhpypc": {
@@ -276,6 +276,12 @@
    "status": "skipped",
    "ts": "2026-09-24T17:07:32+00:00"
   },
+  "2y4u-6i6pyQ": {
+   "attempts": 0,
+   "note": "коротке: 538s",
+   "status": "skipped",
+   "ts": "2026-10-29T19:36:40+00:00"
+  },
   "317BribZPas": {
    "attempts": 0,
    "note": "коротке: 18s",
@@ -474,6 +480,12 @@
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
   },
+  "58ulJViGFgU": {
+   "attempts": 1,
+   "note": "RemoteProtocolError: Server disconnected without sending a response.",
+   "status": "failed",
+   "ts": "2026-10-29T19:52:53+00:00"
+  },
   "5O6jLtoeKrg": {
    "attempts": 0,
    "note": "gemini-3.6-flash; 1/1 msg",
@@ -533,6 +545,12 @@
    "note": "коротке: 72s",
    "status": "skipped",
    "ts": "2026-09-21T23:15:36+00:00"
+  },
+  "674Efd5Scfg": {
+   "attempts": 0,
+   "note": "коротке: 34s",
+   "status": "skipped",
+   "ts": "2026-10-29T19:36:40+00:00"
   },
   "68eKbz5-D5w": {
    "attempts": 0,
@@ -893,6 +911,12 @@
    "note": "коротке: 352s",
    "status": "skipped",
    "ts": "2026-10-26T19:55:18+00:00"
+  },
+  "AqqjH_uv-_w": {
+   "attempts": 0,
+   "note": "коротке: 673s",
+   "status": "skipped",
+   "ts": "2026-10-29T19:36:40+00:00"
   },
   "B6FAMw8FgX4": {
    "attempts": 0,
@@ -1710,6 +1734,12 @@
    "status": "skipped",
    "ts": "2026-10-19T23:36:46+00:00"
   },
+  "LI9NqE2iIqg": {
+   "attempts": 0,
+   "note": "коротке: 66s",
+   "status": "skipped",
+   "ts": "2026-10-29T19:36:40+00:00"
+  },
   "LLjyvTpe7gY": {
    "attempts": 0,
    "note": "коротке: 45s",
@@ -1901,6 +1931,12 @@
    "note": "коротке: 48s",
    "status": "skipped",
    "ts": "2026-10-01T22:39:03+00:00"
+  },
+  "OkiralsKHpk": {
+   "attempts": 0,
+   "note": "коротке: 12s",
+   "status": "skipped",
+   "ts": "2026-10-29T19:36:40+00:00"
   },
   "OmyqelTwpOo": {
    "attempts": 0,
@@ -2598,6 +2634,12 @@
    "status": "skipped",
    "ts": "2026-10-27T22:10:02+00:00"
   },
+  "YIhvrvHtonk": {
+   "attempts": 1,
+   "note": "RemoteProtocolError: Server disconnected without sending a response.",
+   "status": "failed",
+   "ts": "2026-10-29T19:46:11+00:00"
+  },
   "YNT7Plf9KIg": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -3204,6 +3246,12 @@
    "status": "skipped",
    "ts": "2026-10-01T22:39:03+00:00"
   },
+  "ePpgw-zkWX8": {
+   "attempts": 0,
+   "note": "коротке: 651s",
+   "status": "skipped",
+   "ts": "2026-10-29T19:36:40+00:00"
+  },
   "eRZxwHrHsTQ": {
    "attempts": 0,
    "note": "коротке: 146s",
@@ -3378,6 +3426,12 @@
    "status": "skipped",
    "ts": "2026-10-08T19:55:43+00:00"
   },
+  "gRo2NqVmjeE": {
+   "attempts": 0,
+   "note": "коротке: 37s",
+   "status": "skipped",
+   "ts": "2026-10-29T19:36:40+00:00"
+  },
   "gZK9mMo89GU": {
    "attempts": 0,
    "note": "коротке: 156s",
@@ -3425,6 +3479,12 @@
    "note": "RemoteProtocolError: Server disconnected without sending a response.",
    "status": "failed",
    "ts": "2026-10-01T17:29:19+00:00"
+  },
+  "h4OAApaSPCk": {
+   "attempts": 0,
+   "note": "коротке: 28s",
+   "status": "skipped",
+   "ts": "2026-10-29T19:36:40+00:00"
   },
   "h4jAoBON5SQ": {
    "attempts": 0,
@@ -4661,6 +4721,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-06T09:08:43+00:00"
+  },
+  "xZX3pmaB8Hk": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-10-29T19:47:50+00:00"
   },
   "xaRAgKgXZvY": {
    "attempts": 0,
