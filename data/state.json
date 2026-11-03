@@ -193,10 +193,10 @@
    "ts": "2026-10-30T19:19:20+00:00"
   },
   "1et3Lb_KLQo": {
-   "attempts": 1,
+   "attempts": 2,
    "note": "RemoteProtocolError: Server disconnected without sending a response.",
    "status": "failed",
-   "ts": "2026-11-03T16:22:29+00:00"
+   "ts": "2026-11-03T21:49:38+00:00"
   },
   "1fqXz8NOMuY": {
    "attempts": 0,
@@ -227,6 +227,12 @@
    "note": "gemini-3.7-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-30T16:27:27+00:00"
+  },
+  "21YfvVTnMlw": {
+   "attempts": 0,
+   "note": "коротке: 348s",
+   "status": "skipped",
+   "ts": "2026-11-03T21:44:51+00:00"
   },
   "2FaEkewECHs": {
    "attempts": 0,
@@ -1296,6 +1302,12 @@
    "status": "posted",
    "ts": "2026-10-20T11:32:21+00:00"
   },
+  "EZYc0Mn4G5o": {
+   "attempts": 0,
+   "note": "коротке: 31s",
+   "status": "skipped",
+   "ts": "2026-11-03T21:44:51+00:00"
+  },
   "Ed9ghpYARYM": {
    "attempts": 0,
    "note": "коротке: 25s",
@@ -2142,6 +2154,12 @@
    "status": "posted",
    "ts": "2026-10-03T11:38:25+00:00"
   },
+  "Oh0xhEjLZ3g": {
+   "attempts": 0,
+   "note": "коротке: 15s",
+   "status": "skipped",
+   "ts": "2026-11-03T21:44:51+00:00"
+  },
   "OhOmLqR5nN4": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -2369,6 +2387,12 @@
    "note": "коротке: 1264s",
    "status": "skipped",
    "ts": "2026-09-23T13:37:05+00:00"
+  },
+  "RTgNyFWdQec": {
+   "attempts": 0,
+   "note": "коротке: 69s",
+   "status": "skipped",
+   "ts": "2026-11-03T21:44:51+00:00"
   },
   "RUoY5GCdONY": {
    "attempts": 0,
@@ -2729,6 +2753,12 @@
    "note": "коротке: 70s",
    "status": "skipped",
    "ts": "2026-10-30T12:48:52+00:00"
+  },
+  "VusiV3T31tg": {
+   "attempts": 0,
+   "note": "коротке: 159s",
+   "status": "skipped",
+   "ts": "2026-11-03T21:44:51+00:00"
   },
   "W4pnzOURwHQ": {
    "attempts": 0,
@@ -4182,6 +4212,12 @@
    "status": "skipped",
    "ts": "2026-10-30T12:48:52+00:00"
   },
+  "k-ldMhfIuJE": {
+   "attempts": 0,
+   "note": "коротке: 93s",
+   "status": "skipped",
+   "ts": "2026-11-03T21:44:51+00:00"
+  },
   "k0a9UIGuxpY": {
    "attempts": 1,
    "note": "DigestError: Не вдалося отримати дайджест: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
@@ -4619,6 +4655,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-02T23:59:16+00:00"
+  },
+  "paOOAJS5Omk": {
+   "attempts": 0,
+   "note": "коротке: 60s",
+   "status": "skipped",
+   "ts": "2026-11-03T21:44:51+00:00"
   },
   "pbb-DnUZrnQ": {
    "attempts": 0,
