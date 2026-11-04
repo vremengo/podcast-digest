@@ -15,8 +15,8 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 12,
- "gemini_day": "2026-11-03",
+ "gemini_calls_today": 7,
+ "gemini_day": "2026-11-04",
  "videos": {
   "-9XQMHhpypc": {
    "attempts": 1,
@@ -1649,6 +1649,12 @@
    "note": "gemini-3.7-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-04T12:21:39+00:00"
+  },
+  "I7bttHrddiA": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-04T02:25:40+00:00"
   },
   "I980XqjQRw4": {
    "attempts": 0,
