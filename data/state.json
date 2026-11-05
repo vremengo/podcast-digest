@@ -1146,6 +1146,12 @@
    "status": "posted",
    "ts": "2026-10-22T17:21:22+00:00"
   },
+  "CGPQ2-pJ6As": {
+   "attempts": 0,
+   "note": "коротке: 68s",
+   "status": "skipped",
+   "ts": "2026-11-05T09:26:09+00:00"
+  },
   "CGq9KRSb9Kc": {
    "attempts": 2,
    "note": "gemini-3.6-flash; 1/1 msg",
@@ -1235,6 +1241,12 @@
    "note": "коротке: 406s",
    "status": "skipped",
    "ts": "2026-10-20T21:34:29+00:00"
+  },
+  "DXXA8XcnA4A": {
+   "attempts": 0,
+   "note": "коротке: 510s",
+   "status": "skipped",
+   "ts": "2026-11-05T09:26:09+00:00"
   },
   "DZ24Xbm9Joc": {
    "attempts": 0,
@@ -1710,6 +1722,12 @@
    "status": "skipped",
    "ts": "2026-10-20T16:59:48+00:00"
   },
+  "IDs_WGcNLYU": {
+   "attempts": 0,
+   "note": "коротке: 42s",
+   "status": "skipped",
+   "ts": "2026-11-05T09:26:09+00:00"
+  },
   "IEMG9lkc4lA": {
    "attempts": 0,
    "note": "коротке: 123s",
@@ -1937,6 +1955,12 @@
    "note": "коротке: 378s",
    "status": "skipped",
    "ts": "2026-10-31T18:31:03+00:00"
+  },
+  "KkWSvw-ITAc": {
+   "attempts": 0,
+   "note": "коротке: 418s",
+   "status": "skipped",
+   "ts": "2026-11-05T09:26:09+00:00"
   },
   "KlHzPbZ6PNI": {
    "attempts": 0,
@@ -2340,6 +2364,12 @@
    "status": "skipped",
    "ts": "2026-11-04T19:42:46+00:00"
   },
+  "PsAJC6lCBqg": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-11-05T09:26:09+00:00"
+  },
   "PtGKqqu0cmg": {
    "attempts": 0,
    "note": "коротке: 61s",
@@ -2501,6 +2531,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-11T05:43:34+00:00"
+  },
+  "S5f13QPFsF4": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-11-05T09:26:09+00:00"
   },
   "SDbRJXQrYGY": {
    "attempts": 1,
@@ -3821,6 +3857,12 @@
    "note": "коротке: 176s",
    "status": "skipped",
    "ts": "2026-10-09T22:35:44+00:00"
+  },
+  "fYZ4D-t5xCY": {
+   "attempts": 0,
+   "note": "коротке: 27s",
+   "status": "skipped",
+   "ts": "2026-11-05T09:26:09+00:00"
   },
   "f_HwzoYrZ7s": {
    "attempts": 0,
