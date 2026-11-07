@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 16,
+ "gemini_calls_today": 19,
  "gemini_day": "2026-11-07",
  "videos": {
   "-9XQMHhpypc": {
@@ -521,6 +521,12 @@
    "note": "коротке: 210s",
    "status": "skipped",
    "ts": "2026-10-13T15:55:46+00:00"
+  },
+  "4bnSM5aK0OY": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-07T21:52:04+00:00"
   },
   "4c30GJb3Yek": {
    "attempts": 0,
@@ -1445,6 +1451,12 @@
    "note": "коротке: 11s",
    "status": "skipped",
    "ts": "2026-10-15T21:20:08+00:00"
+  },
+  "EtZwTYahfek": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-07T21:49:39+00:00"
   },
   "F8GUNRlTtjE": {
    "attempts": 0,
@@ -2387,6 +2399,12 @@
    "note": "коротке: 11s",
    "status": "skipped",
    "ts": "2026-10-31T12:20:08+00:00"
+  },
+  "Ox4ZEuKTDJQ": {
+   "attempts": 0,
+   "note": "коротке: 82s",
+   "status": "skipped",
+   "ts": "2026-11-07T21:46:11+00:00"
   },
   "OzfbUD02yxE": {
    "attempts": 0,
@@ -3371,6 +3389,12 @@
    "note": "коротке: 42s",
    "status": "skipped",
    "ts": "2026-11-02T23:28:33+00:00"
+  },
+  "ZMEZhqJVqgo": {
+   "attempts": 0,
+   "note": "коротке: 410s",
+   "status": "skipped",
+   "ts": "2026-11-07T21:46:11+00:00"
   },
   "ZMZlAn6Pyfg": {
    "attempts": 0,
@@ -5742,6 +5766,12 @@
    "status": "posted",
    "ts": "2026-10-06T09:08:43+00:00"
   },
+  "xZIXhyYzllY": {
+   "attempts": 0,
+   "note": "коротке: 42s",
+   "status": "skipped",
+   "ts": "2026-11-07T21:46:11+00:00"
+  },
   "xZX3pmaB8Hk": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -5819,6 +5849,12 @@
    "note": "gemini-3.6-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-11-07T01:58:12+00:00"
+  },
+  "y9Sg--RDtks": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-07T21:58:06+00:00"
   },
   "yAsrMA_ADPc": {
    "attempts": 0,
