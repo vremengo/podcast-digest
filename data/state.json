@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 9,
+ "gemini_calls_today": 15,
  "gemini_day": "2026-11-08",
  "videos": {
   "-9XQMHhpypc": {
@@ -2436,6 +2436,12 @@
    "status": "skipped",
    "ts": "2026-11-01T18:54:00+00:00"
   },
+  "PD-FlgD_ILw": {
+   "attempts": 0,
+   "note": "коротке: 99s",
+   "status": "skipped",
+   "ts": "2026-11-08T16:38:50+00:00"
+  },
   "PFO3cJzIFfc": {
    "attempts": 0,
    "note": "коротке: 101s",
@@ -2573,6 +2579,12 @@
    "note": "коротке: 553s",
    "status": "skipped",
    "ts": "2026-11-04T12:04:01+00:00"
+  },
+  "QYTevSNLhHA": {
+   "attempts": 0,
+   "note": "коротке: 350s",
+   "status": "skipped",
+   "ts": "2026-11-08T16:38:50+00:00"
   },
   "Qcr74T0rzws": {
    "attempts": 0,
@@ -3629,6 +3641,12 @@
    "note": "коротке: 419s",
    "status": "skipped",
    "ts": "2026-10-05T19:27:06+00:00"
+  },
+  "aLHYIa7pMik": {
+   "attempts": 0,
+   "note": "коротке: 521s",
+   "status": "skipped",
+   "ts": "2026-11-08T16:38:50+00:00"
   },
   "aLQf7GxSP2s": {
    "attempts": 0,
@@ -5136,6 +5154,12 @@
    "status": "posted",
    "ts": "2026-10-05T09:07:06+00:00"
   },
+  "pz74r-4dGfQ": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-08T16:52:09+00:00"
+  },
   "pzEbPms_tSI": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -5892,6 +5916,12 @@
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
   },
+  "xz61KIVM200": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-08T16:56:51+00:00"
+  },
   "y-OVWZD4j6U": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -5981,6 +6011,12 @@
    "note": "коротке: 92s",
    "status": "skipped",
    "ts": "2026-10-20T21:34:29+00:00"
+  },
+  "ys6YQ2yfBpM": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-08T16:47:42+00:00"
   },
   "yslXlV2BP_Y": {
    "attempts": 1,
