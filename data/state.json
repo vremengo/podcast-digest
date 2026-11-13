@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 8,
  "gemini_day": "2026-11-13",
  "videos": {
   "-64SDd-fFm0": {
@@ -138,6 +138,12 @@
    "status": "skipped",
    "ts": "2026-11-12T00:37:37+00:00"
   },
+  "0FP6wRjcE8A": {
+   "attempts": 0,
+   "note": "коротке: 480s",
+   "status": "skipped",
+   "ts": "2026-11-13T16:16:58+00:00"
+  },
   "0HQY4E32ado": {
    "attempts": 0,
    "note": "коротке: 63s",
@@ -239,6 +245,12 @@
    "note": "коротке: 11s",
    "status": "skipped",
    "ts": "2026-10-07T19:58:25+00:00"
+  },
+  "1cWZ7Ekff6E": {
+   "attempts": 1,
+   "note": "RemoteProtocolError: Server disconnected without sending a response.",
+   "status": "failed",
+   "ts": "2026-11-13T16:32:34+00:00"
   },
   "1ddmTN2PZJc": {
    "attempts": 0,
@@ -905,6 +917,12 @@
    "note": "коротке: 72s",
    "status": "skipped",
    "ts": "2026-11-02T23:28:33+00:00"
+  },
+  "7oCsp2CRj-U": {
+   "attempts": 0,
+   "note": "коротке: 25s",
+   "status": "skipped",
+   "ts": "2026-11-13T16:16:58+00:00"
   },
   "7rN_I4Y-AyE": {
    "attempts": 0,
@@ -2321,6 +2339,18 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-17T15:31:35+00:00"
+  },
+  "KuAMfx6uaBc": {
+   "attempts": 0,
+   "note": "коротке: 16s",
+   "status": "skipped",
+   "ts": "2026-11-13T16:16:58+00:00"
+  },
+  "KxKDBjyB_8c": {
+   "attempts": 0,
+   "note": "коротке: 100s",
+   "status": "skipped",
+   "ts": "2026-11-13T16:16:58+00:00"
   },
   "KzJTif9YnBo": {
    "attempts": 0,
@@ -4926,6 +4956,12 @@
    "status": "posted",
    "ts": "2026-10-30T23:49:15+00:00"
   },
+  "iXWSYlAX5Lg": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-13T16:43:34+00:00"
+  },
   "icMzcnd5IMU": {
    "attempts": 0,
    "note": "коротке: 22s",
@@ -6132,6 +6168,12 @@
    "status": "posted",
    "ts": "2026-10-08T13:39:31+00:00"
   },
+  "uTBtDgqo3UY": {
+   "attempts": 0,
+   "note": "коротке: 17s",
+   "status": "skipped",
+   "ts": "2026-11-13T16:16:58+00:00"
+  },
   "uTrLwwF0tOg": {
    "attempts": 0,
    "note": "коротке: 11s",
@@ -6557,6 +6599,12 @@
    "note": "gemini-3.6-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-11-07T01:58:12+00:00"
+  },
+  "y9JtCCZP2MQ": {
+   "attempts": 0,
+   "note": "задовге: 32710s",
+   "status": "skipped",
+   "ts": "2026-11-13T16:16:58+00:00"
   },
   "y9Sg--RDtks": {
    "attempts": 0,
