@@ -558,6 +558,12 @@
    "status": "skipped",
    "ts": "2026-09-30T08:30:21+00:00"
   },
+  "3zW2X9OXxC0": {
+   "attempts": 0,
+   "note": "коротке: 71s",
+   "status": "skipped",
+   "ts": "2026-11-15T15:38:21+00:00"
+  },
   "4-5rcbfLK08": {
    "attempts": 0,
    "note": "коротке: 52s",
@@ -3197,6 +3203,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-02T05:33:04+00:00"
+  },
+  "SeGUXN8XIu8": {
+   "attempts": 0,
+   "note": "коротке: 45s",
+   "status": "skipped",
+   "ts": "2026-11-15T15:38:21+00:00"
   },
   "SfVYgKc3wYE": {
    "attempts": 0,
