@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 4,
+ "gemini_calls_today": 19,
  "gemini_day": "2026-11-16",
  "videos": {
   "-64SDd-fFm0": {
@@ -588,6 +588,12 @@
    "status": "posted",
    "ts": "2026-10-03T16:19:35+00:00"
   },
+  "49gIAR6Pzj8": {
+   "attempts": 0,
+   "note": "коротке: 95s",
+   "status": "skipped",
+   "ts": "2026-11-16T20:24:57+00:00"
+  },
   "4D9Ki-TCV2Q": {
    "attempts": 0,
    "note": "коротке: 20s",
@@ -605,6 +611,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-24T21:29:28+00:00"
+  },
+  "4J6RrfQaOj0": {
+   "attempts": 0,
+   "note": "коротке: 26s",
+   "status": "skipped",
+   "ts": "2026-11-16T20:24:57+00:00"
   },
   "4LTLhycALKs": {
    "attempts": 0,
@@ -804,6 +816,12 @@
    "status": "posted",
    "ts": "2026-09-17T21:20:11+00:00"
   },
+  "6G1oON_gL9Q": {
+   "attempts": 0,
+   "note": "коротке: 172s",
+   "status": "skipped",
+   "ts": "2026-11-16T20:24:57+00:00"
+  },
   "6MudaeKdBSk": {
    "attempts": 1,
    "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
@@ -881,6 +899,12 @@
    "note": "коротке: 109s",
    "status": "skipped",
    "ts": "2026-10-01T17:01:19+00:00"
+  },
+  "7ILXfrxlWpo": {
+   "attempts": 0,
+   "note": "коротке: 14s",
+   "status": "skipped",
+   "ts": "2026-11-16T20:24:57+00:00"
   },
   "7RcqVJGYvlE": {
    "attempts": 0,
@@ -1097,6 +1121,12 @@
    "note": "коротке: 89s",
    "status": "skipped",
    "ts": "2026-10-14T13:40:55+00:00"
+  },
+  "97SWpLlTgdQ": {
+   "attempts": 0,
+   "note": "коротке: 33s",
+   "status": "skipped",
+   "ts": "2026-11-16T20:24:57+00:00"
   },
   "9Asgxtk_kkI": {
    "attempts": 0,
@@ -1517,6 +1547,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-11-01T23:37:25+00:00"
+  },
+  "Cyt3LU8TyNc": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-16T20:52:43+00:00"
   },
   "D2rshT4KGEg": {
    "attempts": 0,
@@ -4266,6 +4302,12 @@
    "status": "skipped",
    "ts": "2026-09-29T14:45:40+00:00"
   },
+  "aQ1uOMfj6bQ": {
+   "attempts": 0,
+   "note": "коротке: 21s",
+   "status": "skipped",
+   "ts": "2026-11-16T20:24:57+00:00"
+  },
   "aSch4W4-aLM": {
    "attempts": 0,
    "note": "коротке: 109s",
@@ -5886,6 +5928,12 @@
    "status": "posted",
    "ts": "2026-11-11T09:24:08+00:00"
   },
+  "pa5AxRsiS3A": {
+   "attempts": 0,
+   "note": "коротке: 12s",
+   "status": "skipped",
+   "ts": "2026-11-16T20:24:57+00:00"
+  },
   "paOOAJS5Omk": {
    "attempts": 0,
    "note": "коротке: 60s",
@@ -6828,6 +6876,12 @@
    "status": "posted",
    "ts": "2026-10-03T23:01:12+00:00"
   },
+  "y1-9yeYLJUo": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-16T20:44:16+00:00"
+  },
   "y4BdOtm40SA": {
    "attempts": 0,
    "note": "gemini-3.6-flash; 1/1 msg",
@@ -6977,6 +7031,12 @@
    "note": "коротке: 48s",
    "status": "skipped",
    "ts": "2026-10-08T00:11:06+00:00"
+  },
+  "zIsl7Q6nhFs": {
+   "attempts": 0,
+   "note": "коротке: 75s",
+   "status": "skipped",
+   "ts": "2026-11-16T20:24:57+00:00"
   },
   "zJ3U9oHLp1o": {
    "attempts": 0,
