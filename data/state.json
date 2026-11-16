@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 4,
  "gemini_day": "2026-11-16",
  "videos": {
   "-64SDd-fFm0": {
@@ -870,6 +870,12 @@
    "status": "skipped",
    "ts": "2026-10-27T22:10:02+00:00"
   },
+  "7DO3mOl_OrI": {
+   "attempts": 0,
+   "note": "коротке: 101s",
+   "status": "skipped",
+   "ts": "2026-11-16T09:34:40+00:00"
+  },
   "7DtkrTrTfF0": {
    "attempts": 0,
    "note": "коротке: 109s",
@@ -1451,6 +1457,12 @@
    "note": "gemini-3.6-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-24T11:48:48+00:00"
+  },
+  "CIjvpmKbcwQ": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-16T09:46:09+00:00"
   },
   "CLve4Nx_RwI": {
    "attempts": 0,
@@ -2244,6 +2256,12 @@
    "status": "posted",
    "ts": "2026-09-29T08:31:13+00:00"
   },
+  "JF5W20NVLL4": {
+   "attempts": 0,
+   "note": "коротке: 46s",
+   "status": "skipped",
+   "ts": "2026-11-16T09:34:40+00:00"
+  },
   "JGtkTjn4120": {
    "attempts": 0,
    "note": "gemini-3.6-flash; 1/1 msg",
@@ -2754,6 +2772,12 @@
    "status": "posted",
    "ts": "2026-10-03T11:38:25+00:00"
   },
+  "O_zcc6Xl12g": {
+   "attempts": 1,
+   "note": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "status": "failed",
+   "ts": "2026-11-16T10:03:21+00:00"
+  },
   "Oh0xhEjLZ3g": {
    "attempts": 0,
    "note": "коротке: 15s",
@@ -3083,6 +3107,12 @@
    "note": "коротке: 79s",
    "status": "skipped",
    "ts": "2026-10-12T22:56:18+00:00"
+  },
+  "RXTT2q4CvJ8": {
+   "attempts": 0,
+   "note": "коротке: 49s",
+   "status": "skipped",
+   "ts": "2026-11-16T09:34:40+00:00"
   },
   "RZtG02WucMI": {
    "attempts": 0,
@@ -5945,6 +5975,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-16T07:12:36+00:00"
+  },
+  "q8miqVUyh7w": {
+   "attempts": 0,
+   "note": "коротке: 133s",
+   "status": "skipped",
+   "ts": "2026-11-16T09:34:40+00:00"
   },
   "q8nX_CQd240": {
    "attempts": 0,
