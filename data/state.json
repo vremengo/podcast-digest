@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 3,
+ "gemini_calls_today": 19,
  "gemini_day": "2026-11-18",
  "videos": {
   "-64SDd-fFm0": {
@@ -65,6 +65,12 @@
    "note": "коротке: 39s",
    "status": "skipped",
    "ts": "2026-09-18T16:21:58+00:00"
+  },
+  "-PQpJAdp7gw": {
+   "attempts": 0,
+   "note": "коротке: 61s",
+   "status": "skipped",
+   "ts": "2026-11-18T17:13:02+00:00"
   },
   "-XL2gClQ2gg": {
    "attempts": 0,
@@ -726,6 +732,12 @@
    "status": "skipped",
    "ts": "2026-10-01T17:01:19+00:00"
   },
+  "5OszlMNUZD0": {
+   "attempts": 0,
+   "note": "коротке: 68s",
+   "status": "skipped",
+   "ts": "2026-11-18T17:13:02+00:00"
+  },
   "5QsADHyOU2w": {
    "attempts": 0,
    "note": "коротке: 86s",
@@ -923,6 +935,12 @@
    "note": "коротке: 109s",
    "status": "skipped",
    "ts": "2026-10-01T17:01:19+00:00"
+  },
+  "7EbPyzFCCHk": {
+   "attempts": 0,
+   "note": "коротке: 48s",
+   "status": "skipped",
+   "ts": "2026-11-18T17:13:02+00:00"
   },
   "7ILXfrxlWpo": {
    "attempts": 0,
@@ -1187,6 +1205,12 @@
    "note": "коротке: 165s",
    "status": "skipped",
    "ts": "2026-09-22T11:34:02+00:00"
+  },
+  "9RKrSF9d2SE": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-18T17:34:59+00:00"
   },
   "9Um0JtnR0LQ": {
    "attempts": 0,
@@ -2255,6 +2279,12 @@
    "note": "коротке: 143s",
    "status": "skipped",
    "ts": "2026-10-03T11:36:09+00:00"
+  },
+  "IPh9YsWvDQk": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-18T17:24:12+00:00"
   },
   "IQ4JVWdj4Q0": {
    "attempts": 0,
@@ -4608,6 +4638,12 @@
    "status": "skipped",
    "ts": "2026-11-10T20:47:40+00:00"
   },
+  "c8Aia1A2VKU": {
+   "attempts": 0,
+   "note": "коротке: 36s",
+   "status": "skipped",
+   "ts": "2026-11-18T17:13:02+00:00"
+  },
   "c8QLuWNJEnY": {
    "attempts": 0,
    "note": "коротке: 671s",
@@ -6119,6 +6155,12 @@
    "note": "коротке: 11s",
    "status": "skipped",
    "ts": "2026-10-06T22:38:22+00:00"
+  },
+  "piHzLN-8S5s": {
+   "attempts": 0,
+   "note": "коротке: 91s",
+   "status": "skipped",
+   "ts": "2026-11-18T17:13:02+00:00"
   },
   "plEkDpAIC7Y": {
    "attempts": 0,
