@@ -5952,6 +5952,12 @@
    "status": "skipped",
    "ts": "2026-10-02T19:17:03+00:00"
   },
+  "mFU9ub8B_h8": {
+   "attempts": 0,
+   "note": "коротке: 697s",
+   "status": "skipped",
+   "ts": "2026-11-20T09:58:14+00:00"
+  },
   "mHNKuH-9OxU": {
    "attempts": 1,
    "note": "gemini-3.6-flash; 2/2 msg",
