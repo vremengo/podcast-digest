@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 3,
+ "gemini_calls_today": 7,
  "gemini_day": "2026-11-20",
  "videos": {
   "-64SDd-fFm0": {
@@ -1925,6 +1925,12 @@
    "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
    "status": "failed",
    "ts": "2026-10-13T16:15:46+00:00"
+  },
+  "FMMjSY1pVDM": {
+   "attempts": 0,
+   "note": "коротке: 158s",
+   "status": "skipped",
+   "ts": "2026-11-20T18:35:29+00:00"
   },
   "FPrbxcVbEx4": {
    "attempts": 0,
@@ -6252,6 +6258,12 @@
    "status": "posted",
    "ts": "2026-10-19T23:37:57+00:00"
   },
+  "oaUHSYQpVAA": {
+   "attempts": 0,
+   "note": "коротке: 54s",
+   "status": "skipped",
+   "ts": "2026-11-20T18:35:29+00:00"
+  },
   "obfPzbapMIM": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -7049,6 +7061,12 @@
    "note": "коротке: 43s",
    "status": "skipped",
    "ts": "2026-09-27T23:01:38+00:00"
+  },
+  "vktqIFvhXMI": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
+   "status": "failed",
+   "ts": "2026-11-20T18:35:31+00:00"
   },
   "vl7HiMdGfjo": {
    "attempts": 1,
