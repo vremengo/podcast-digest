@@ -3300,6 +3300,12 @@
    "status": "skipped",
    "ts": "2026-09-26T16:20:36+00:00"
   },
+  "QgN2bwiUh_U": {
+   "attempts": 0,
+   "note": "коротке: 92s",
+   "status": "skipped",
+   "ts": "2026-11-21T17:27:06+00:00"
+  },
   "QiOhe3qCRlU": {
    "attempts": 0,
    "note": "коротке: 386s",
@@ -6197,6 +6203,12 @@
    "note": "коротке: 34s",
    "status": "skipped",
    "ts": "2026-11-12T23:39:15+00:00"
+  },
+  "njkVoLo2Bvs": {
+   "attempts": 0,
+   "note": "коротке: 146s",
+   "status": "skipped",
+   "ts": "2026-11-21T17:27:06+00:00"
   },
   "nkARRr6ohjk": {
    "attempts": 0,
