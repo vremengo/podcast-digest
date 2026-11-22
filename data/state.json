@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 11,
+ "gemini_calls_today": 18,
  "gemini_day": "2026-11-22",
  "videos": {
   "-64SDd-fFm0": {
@@ -3341,6 +3341,12 @@
    "note": "коротке: 386s",
    "status": "skipped",
    "ts": "2026-10-27T12:05:29+00:00"
+  },
+  "QjDMSL4PpPE": {
+   "attempts": 0,
+   "note": "коротке: 84s",
+   "status": "skipped",
+   "ts": "2026-11-22T16:13:46+00:00"
   },
   "Qmc0IN_JuzQ": {
    "attempts": 0,
@@ -6911,6 +6917,12 @@
    "note": "коротке: 35s",
    "status": "skipped",
    "ts": "2026-10-31T12:20:08+00:00"
+  },
+  "tCY7zMknCJQ": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-22T16:29:47+00:00"
   },
   "tEgNtsyKlLQ": {
    "attempts": 0,
