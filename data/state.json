@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 0,
+ "gemini_calls_today": 19,
  "gemini_day": "2026-11-24",
  "videos": {
   "-64SDd-fFm0": {
@@ -2682,6 +2682,12 @@
    "status": "skipped",
    "ts": "2026-10-01T22:39:03+00:00"
   },
+  "KYcVWXhgKBc": {
+   "attempts": 1,
+   "note": "DigestError: Не вдалося отримати дайджест: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try aga",
+   "status": "failed",
+   "ts": "2026-11-24T15:11:10+00:00"
+  },
   "KffXVksaWHY": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -3504,6 +3510,12 @@
    "status": "skipped",
    "ts": "2026-10-12T22:56:18+00:00"
   },
+  "RV9JbYtfCOo": {
+   "attempts": 0,
+   "note": "коротке: 60s",
+   "status": "skipped",
+   "ts": "2026-11-24T14:49:05+00:00"
+  },
   "RXTT2q4CvJ8": {
    "attempts": 0,
    "note": "коротке: 49s",
@@ -3566,9 +3578,9 @@
   },
   "RwYz8XhZiu0": {
    "attempts": 1,
-   "note": "RemoteProtocolError: Server disconnected without sending a response.",
-   "status": "failed",
-   "ts": "2026-11-24T03:12:30+00:00"
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-24T14:54:41+00:00"
   },
   "S-2kdhU74lQ": {
    "attempts": 0,
