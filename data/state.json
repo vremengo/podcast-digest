@@ -15,7 +15,7 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 13,
+ "gemini_calls_today": 17,
  "gemini_day": "2026-11-27",
  "videos": {
   "-2cAbQoJ0fg": {
@@ -2946,6 +2946,12 @@
    "status": "skipped",
    "ts": "2026-11-05T23:36:34+00:00"
   },
+  "LkCQozi9mZs": {
+   "attempts": 0,
+   "note": "коротке: 19s",
+   "status": "skipped",
+   "ts": "2026-11-27T19:27:09+00:00"
+  },
   "Lk_0TviLhnw": {
    "attempts": 0,
    "note": "коротке: 121s",
@@ -4248,6 +4254,12 @@
    "status": "skipped",
    "ts": "2026-11-03T21:44:51+00:00"
   },
+  "W0hCs45h6QY": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-27T19:32:46+00:00"
+  },
   "W4pnzOURwHQ": {
    "attempts": 0,
    "note": "gemini-3.8-flash; 1/1 msg",
@@ -4409,6 +4421,12 @@
    "note": "коротке: 93s",
    "status": "skipped",
    "ts": "2026-10-06T08:56:41+00:00"
+  },
+  "XVRy-tDWBA8": {
+   "attempts": 0,
+   "note": "коротке: 489s",
+   "status": "skipped",
+   "ts": "2026-11-27T19:27:09+00:00"
   },
   "XVnioinJx3c": {
    "attempts": 0,
@@ -6048,6 +6066,12 @@
    "status": "skipped",
    "ts": "2026-10-09T16:58:43+00:00"
   },
+  "j3K4FBo2Mn8": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-27T19:35:19+00:00"
+  },
   "j6WZE9Q5u3Y": {
    "attempts": 0,
    "note": "коротке: 52s",
@@ -6641,6 +6665,12 @@
    "note": "коротке: 146s",
    "status": "skipped",
    "ts": "2026-11-21T17:27:06+00:00"
+  },
+  "nk-DHZP-5OY": {
+   "attempts": 0,
+   "note": "коротке: 11s",
+   "status": "skipped",
+   "ts": "2026-11-27T19:27:09+00:00"
   },
   "nkARRr6ohjk": {
    "attempts": 0,
@@ -7781,6 +7811,12 @@
    "note": "коротке: 41s",
    "status": "skipped",
    "ts": "2026-11-17T23:29:19+00:00"
+  },
+  "wrfbI5eyLAI": {
+   "attempts": 0,
+   "note": "gemini-3.8-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-27T19:29:40+00:00"
   },
   "ws9XcGGPBDk": {
    "attempts": 0,
