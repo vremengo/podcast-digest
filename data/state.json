@@ -15,8 +15,8 @@
   "@yahoofinance": "UCEAZeUIeJs0IjQiqTCdVSIg",
   "@ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
  },
- "gemini_calls_today": 17,
- "gemini_day": "2026-11-27",
+ "gemini_calls_today": 13,
+ "gemini_day": "2026-11-28",
  "videos": {
   "-2cAbQoJ0fg": {
    "attempts": 0,
@@ -305,6 +305,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-11T12:47:09+00:00"
+  },
+  "1S4hx3wgvBE": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-28T02:42:28+00:00"
   },
   "1_lX0m64-aI": {
    "attempts": 1,
@@ -1080,6 +1086,12 @@
    "status": "posted",
    "ts": "2026-10-20T17:01:10+00:00"
   },
+  "7YLqyt5lCXg": {
+   "attempts": 0,
+   "note": "коротке: 87s",
+   "status": "skipped",
+   "ts": "2026-11-28T02:39:35+00:00"
+  },
   "7YvX1_xKUyE": {
    "attempts": 0,
    "note": "коротке: 107s",
@@ -1410,6 +1422,12 @@
    "status": "skipped",
    "ts": "2026-11-07T16:24:13+00:00"
   },
+  "9wI9jWn4-Vw": {
+   "attempts": 0,
+   "note": "gemini-3.7-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-28T02:46:04+00:00"
+  },
   "9wLvJrx49oo": {
    "attempts": 0,
    "note": "коротке: 11s",
@@ -1589,6 +1607,12 @@
    "note": "gemini-3.8-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-10-15T21:20:55+00:00"
+  },
+  "BN_Jcb_zF8w": {
+   "attempts": 0,
+   "note": "коротке: 121s",
+   "status": "skipped",
+   "ts": "2026-11-28T02:39:35+00:00"
   },
   "BOWYujhIQuo": {
    "attempts": 0,
@@ -3720,6 +3744,12 @@
    "status": "posted",
    "ts": "2026-10-11T05:43:34+00:00"
   },
+  "S3zT1x-ZH7k": {
+   "attempts": 0,
+   "note": "коротке: 495s",
+   "status": "skipped",
+   "ts": "2026-11-28T02:39:35+00:00"
+  },
   "S4NYamZuts4": {
    "attempts": 0,
    "note": "коротке: 62s",
@@ -4163,6 +4193,12 @@
    "note": "gemini-3.6-flash; 1/1 msg",
    "status": "posted",
    "ts": "2026-09-24T17:12:39+00:00"
+  },
+  "Uj81Qo15wBc": {
+   "attempts": 0,
+   "note": "gemini-3.6-flash; 1/1 msg",
+   "status": "posted",
+   "ts": "2026-11-28T02:42:07+00:00"
   },
   "Um1v1XKxG2M": {
    "attempts": 0,
